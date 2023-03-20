@@ -1,0 +1,136 @@
+nav{
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size:larger;
+    text-decoration: none;
+    align-items: center;
+}
+.header{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header_logo{
+    cursor: pointer;
+    width:70px;
+}
+.header p{
+    cursor: pointer;
+}
+.items{
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.items_list{
+    padding: 5px;
+    justify-self: center;
+    cursor: pointer;
+}
+.items_list:hover{
+    color: rgb(234, 234, 234);
+    transition: ease-out 200ms;
+    background-color: rgba(255, 255, 255, 0.197);
+    border-radius: 50px;
+}
+.items_login{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.login{
+    cursor: pointer;
+    padding: 5px;
+    grid-column: 2/3;
+}
+
+.menu_icon{
+    visibility: hidden;
+    filter: invert();
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        grid-template-columns: repeat(1,1fr);
+        background-color:rgba(101, 101, 101, 0.349);
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        /* border-bottom: rgba(255, 255, 255, 0.125) solid; */
+        font-size: xx-large;
+        backdrop-filter: blur(5px);
+    }
+    .header{
+        justify-self: flex-start;
+    }
+    .items{
+        visibility:hidden;
+        position: absolute;
+        grid-template-columns: repeat(1,1fr);
+        justify-self: flex-end;
+    }
+    .items_list{
+        justify-self: flex-end;
+        margin-right: 10px;
+    }
+    .menu_icon{
+        z-index: 10000;
+        visibility: visible;
+        justify-self: flex-end;
+    }
+    .items_login{
+        visibility: hidden;
+        position: absolute;
+        grid-template-columns: repeat(1,1fr);
+        padding: 5px;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+    .header p{
+        grid-column: span 2;
+        font-size: x-large;
+    }
+    .visible_items{
+        animation: animate_items 1s forwards;
+        /* visibility: visible;
+        position: relative; */
+    }
+    .hide_items{
+        animation: hide_items 0.1s forwards;
+        position: absolute;
+    }
+    @keyframes animate_items {
+        0%{
+            position: relative;
+            visibility: visible;
+        }
+        100%{
+            position: relative;
+            visibility: visible;
+        }
+    }
+    @keyframes hide_items {
+        0%{
+            position: relative;
+            visibility: visible;
+        }
+        99%{
+            position: relative;
+            visibility: hidden;
+        }
+        100%{
+            position: absolute;
+        }
+    }
+
+}
