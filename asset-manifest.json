@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Fiitness_gym/static/css/main.0a0619cc.css",
+    "main.js": "/Fiitness_gym/static/js/main.7b3881cd.js",
+    "static/js/787.4159b215.chunk.js": "/Fiitness_gym/static/js/787.4159b215.chunk.js",
+    "static/media/1.jpg": "/Fiitness_gym/static/media/1.d791b7dbac986a85fbd9.jpg",
+    "static/media/5.jpg": "/Fiitness_gym/static/media/5.a5e4a333a39c8b99a089.jpg",
+    "static/media/2.png": "/Fiitness_gym/static/media/2.3c547bea265146823db3.png",
+    "index.html": "/Fiitness_gym/index.html",
+    "main.0a0619cc.css.map": "/Fiitness_gym/static/css/main.0a0619cc.css.map",
+    "main.7b3881cd.js.map": "/Fiitness_gym/static/js/main.7b3881cd.js.map",
+    "787.4159b215.chunk.js.map": "/Fiitness_gym/static/js/787.4159b215.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a0619cc.css",
+    "static/js/main.7b3881cd.js"
+  ]
+}
