@@ -1,5 +1,5 @@
 import "./static/nav.css";
-import logo from "./static/images/2.png";
+import logo from "./static/images/fiitness_gym_logo_png1.png";
 import menu from "./static/images/4.png";
 import $ from 'jquery';
 
@@ -29,17 +29,17 @@ const Navbar = () => {
             <nav className="text-white">
                 <div className="header">
                     <img className="header_logo" src={logo} alt="logo" /> 
-                    <p>FIITNESS GYM</p>
+                    <p className="italic">Fiitness Gym</p>
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
                 <div className="items">
-                    <div className="items_list">Fitness</div>
-                    <div className="items_list">Care</div>
-                    <div className="items_list">Mind</div>
-                    <div className="items_list">Store</div>
+                    <div className="items_list">Home</div>
+                    <div className="items_list">Diet Chart</div>
+                    <div className="items_list">Timetable</div>
+                    <div className="items_list">About Us</div>
                 </div>
                 <div className="items_login">
-                    <div className="login">Login</div>
+                    <div className="login">Subscription</div>
                 </div>
             </nav>
         </>
