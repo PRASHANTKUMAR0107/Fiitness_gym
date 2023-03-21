@@ -2,6 +2,7 @@ import "./static/nav.css";
 import logo from "./static/images/fiitness_gym_logo_png1.png";
 import menu from "./static/images/4.png";
 import $ from 'jquery';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -33,10 +34,10 @@ const Navbar = () => {
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
                 <div className="items">
-                    <div className="items_list">Home</div>
-                    <div className="items_list">Diet Chart</div>
-                    <div className="items_list">Timetable</div>
-                    <div className="items_list">About Us</div>
+                    <div className="items_list"> <Link to={"/"}> Home </Link></div>
+                    <div className="items_list"><Link to={""}> Diet Chart </Link></div>
+                    <div className="items_list"><Link to={""}> Timetable </Link></div>
+                    <div className="items_list"> <Link to={"/about"}> About Us </Link></div>
                 </div>
                 <div className="items_login">
                     <div className="login">Subscription</div>

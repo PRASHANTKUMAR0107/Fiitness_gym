@@ -1,0 +1,13 @@
+footer{
+    z-index: -2;
+    min-height: 50vh;
+    background-color: #2d3e4e;
+    /* padding: 20px; */
+}
+
+.footer_section{
+    background-color: #cbe4de14;
+    min-height: 50vh;
+    /* filter: blur(5px); */
+    z-index: 2;
+}
