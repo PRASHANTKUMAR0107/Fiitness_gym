@@ -32,6 +32,7 @@ main::before{
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.797);
     min-height: 150vh;
+    padding: 20px;
 }
 .explore_more{
     position: absolute;
@@ -100,9 +101,21 @@ main::before{
 .about_gym span{
     letter-spacing: 2px;
 }
-.about_gym img{
+.about_gym_img{
     object-fit: cover;
     height: 100%;
+    border-radius: 20px;
+}
+.social_media{
+    display: flex;
+}
+.social_media a{
+    display: flex;
+    margin-right: 10px;
+}
+.social_media_img{
+    height: 20px;
+    margin-right: 5px;
 }
 @media only screen and (max-width:800px){
     main{

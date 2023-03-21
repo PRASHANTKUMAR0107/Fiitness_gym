@@ -5,6 +5,8 @@ import hero2 from "./static/images/hero_2.png";
 import hero3 from "./static/images/hero_3.png";
 import explore_more from "./static/images/3.png";
 import about_gymimg from "./static/images/6.jpg";
+import insta from "./static/images/insta.png"
+import fb from "./static/images/fb.png"
 
 import $ from 'jquery';
 $(window).scroll(function(){
@@ -52,13 +54,21 @@ const Home = () => {
         </div>
       </div>
       <div className="about_gym">
-        <img src={about_gymimg} alt="loading ..." />
+        <img className="about_gym_img" src={about_gymimg} alt="loading ..." />
         <div>
           <h3 className="text-9xl my-5">365 </h3>
           <p className="text-gray-300">days of fitness . . . Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis a amet esse blanditiis quaerat eveniet qui culpa, non reprehenderit ex saepe maiores provident. Necessitatibus laudantium perferendis ipsa minima voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet dolor optio a eum doloremque saepe dolorum reprehenderit accusamus molestias repudiandae in, error sunt tempora doloribus quisquam qui porro earum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat laudantium at odio sapiente amet excepturi animi aliquam vel. Mollitia quaerat quod libero vel laboriosam odit quos, optio dolorem tempora earum.</p>
           <br />
-          <a href="https://www.instagram.com/"> instaHandle </a>
-          <a href="facebook.com"> fbHandle </a>
+          <div className="social_media">
+          <a href="https://www.instagram.com/"> 
+            <img className="social_media_img" src={insta} alt="" />
+            <p>instahandle</p>
+          </a>
+          <a href="facebook.com"> 
+            <img className="social_media_img" src={fb} alt="" /> 
+            <p>fbhandle</p>
+          </a>
+          </div>
         </div>
       </div>
     </div>
