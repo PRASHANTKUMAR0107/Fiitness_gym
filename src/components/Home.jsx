@@ -6,6 +6,7 @@ import hero3 from "./static/images/hero_3.png";
 import explore_more from "./static/images/3.png";
 import about_gymimg from "./static/images/6.jpg";
 import insta from "./static/images/insta.png"
+import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
 
 import $ from 'jquery';
@@ -15,7 +16,7 @@ $(window).scroll(function(){
       .css("background-size", (100 + 100 * $(window).scrollTop() / 500) + "%");
   } else {
     $("main")
-      .css("background-size", (120 + 100 * $(window).scrollTop() / 500) + "%");
+      .css("background-size", (100 + 100 * $(window).scrollTop() / 500) + "%");
   }
     $(".logo_main")
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
@@ -32,10 +33,33 @@ const Home = () => {
     <div className="all">
     <main>
         <img className="logo_main" src={logo} alt="loading ..." />
-        <p className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .</p>
-        <div className="btn explore_more text-red-800"><button className="rounded-full p-1"> Explore More <span> <img src={explore_more} alt="" /> </span> </button></div>
+        <div>
+        <p className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .
+          <span className="flex my-5">
+            <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full">Subcribe</button>
+            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full">Contact Us</button>
+          </span>
+        </p>
+        <div className="social_media_main">
+          <a href="https://www.instagram.com/"> 
+            <img className="social_media_main_img" src={wa} alt="" />
+          </a>
+          <a href="https://www.instagram.com/"> 
+            <img className="social_media_main_img" src={insta} alt="" />
+          </a>
+          <a href="facebook.com"> 
+            <img className="social_media_main_img" src={fb} alt="" /> 
+          </a>
+          </div>
+          </div>
+        <div className="btn explore_more text-red-800"><button className="rounded-full p-1"> <a href="#content"> Explore More </a> <span> <img src={explore_more} alt="" /> </span> </button></div>
     </main> 
-    <div className="content">
+    <div id="content" className="content">
+      <div className="motivation">
+        <p>
+        "You don't have to be great to start, but you have to start to be great."
+        </p>
+      </div>
       <div className="hero ">
         <div className="hero_items">
           <img className="hero_img" src={hero1} alt="loading ..." />

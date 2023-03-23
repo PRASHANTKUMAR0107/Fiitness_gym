@@ -6,7 +6,7 @@ nav{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    font-size:larger;
+    font-size:medium;
     text-decoration: none;
     align-items: center;
 }
@@ -59,10 +59,7 @@ nav{
 @media only screen and (max-width: 600px) {
     nav{
         grid-template-columns: repeat(1,1fr);
-        background-color:rgba(101, 101, 101, 0.349);
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
-        /* border-bottom: rgba(255, 255, 255, 0.125) solid; */
+        background-color: rgb(32, 32, 32);
         font-size: xx-large;
         backdrop-filter: blur(5px);
     }
@@ -78,6 +75,7 @@ nav{
     .items_list{
         justify-self: flex-end;
         margin-right: 10px;
+        font-size: 25px;
     }
     .menu_icon{
         z-index: 10000;
@@ -89,6 +87,7 @@ nav{
         position: absolute;
         grid-template-columns: repeat(1,1fr);
         padding: 5px;
+        font-size: 25px;
     }
     .header{
         display: grid;
