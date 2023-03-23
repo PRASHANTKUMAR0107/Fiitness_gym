@@ -16,7 +16,7 @@ $(window).scroll(function(){
       .css("background-size", (100 + 100 * $(window).scrollTop() / 500) + "%");
   } else {
     $("main")
-      .css("background-size", (100 + 100 * $(window).scrollTop() / 500) + "%");
+      .css("background-size", (110 + 100 * $(window).scrollTop() / 500) + "%");
   }
     $(".logo_main")
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");

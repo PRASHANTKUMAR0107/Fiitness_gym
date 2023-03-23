@@ -142,7 +142,7 @@ main::before{
     main{
         background-image: url(../images/5.jpg);
         background-size: cover;
-        height: 95vh;
+        height: 93vh;
     }
     .main_text{
         font-size: 45px;
