@@ -1,12 +1,13 @@
 .all{
-    background-color: black;
+    background-color: #212929;
+    min-height: 100vh;
 }
 main{
     height: 100vh;
-    background-image:url(../images/1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.112), #212929c4), url(../images/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    background-color: #212929;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -17,9 +18,9 @@ main::before{
     bottom: 0%;
     content: '';
     position: absolute;
-    height: 200px;
+    height: 150px;
     width: 100%;
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, #212929 0%, rgba(0, 0, 0, 0) 100%);
 }
 .logo_main{
     justify-self: flex-end;
@@ -30,7 +31,7 @@ main::before{
     margin-top: 100px;
     overflow: hidden;
     z-index: 5;
-    background-color: rgba(0, 0, 0, 0.797);
+    background-color: #212929;
     min-height: 150vh;
     padding: 60px;
 }
@@ -140,7 +141,7 @@ main::before{
 
 @media only screen and (max-width:800px){
     main{
-        background-image: url(../images/5.jpg);
+        background-image:linear-gradient(rgba(255, 255, 255, 0), #212929e7), url(../images/5.jpg);
         background-size: cover;
         height: 93vh;
     }
@@ -149,6 +150,7 @@ main::before{
         font-weight: bold;
         letter-spacing: 2px;
         line-height: 1.3;
+        margin-top: 100px;
     }
     .main_text button{
         font-size:small;

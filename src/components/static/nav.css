@@ -25,8 +25,9 @@ nav{
     cursor: pointer;
 }
 .items{
+    grid-column: span 2;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(8,1fr);
 }
 .items_list{
     padding: 5px;
@@ -39,16 +40,10 @@ nav{
     background-color: rgba(255, 255, 255, 0.197);
     border-radius: 50px;
 }
-.items_login{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
 .login{
-    cursor: pointer;
-    padding: 5px;
-    grid-column: 2/3;
+    grid-column: 7/8;
+    justify-self: flex-start;
 }
-
 .menu_icon{
     visibility: hidden;
     filter: invert();
@@ -61,74 +56,33 @@ nav{
         grid-template-columns: repeat(1,1fr);
         background-color: rgb(32, 32, 32);
         font-size: xx-large;
-        backdrop-filter: blur(5px);
     }
     .header{
         justify-self: flex-start;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
     }
     .items{
-        visibility:hidden;
-        position: absolute;
+        display: grid;
         grid-template-columns: repeat(1,1fr);
-        justify-self: flex-end;
     }
     .items_list{
         justify-self: flex-end;
         margin-right: 10px;
         font-size: 25px;
     }
+    .login{
+        grid-column: 1/1;
+        justify-self: flex-end;
+    }
     .menu_icon{
         z-index: 10000;
         visibility: visible;
         justify-self: flex-end;
     }
-    .items_login{
-        visibility: hidden;
-        position: absolute;
-        grid-template-columns: repeat(1,1fr);
-        padding: 5px;
-        font-size: 25px;
-    }
-    .header{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        width: 100%;
-    }
     .header p{
         grid-column: span 2;
         font-size: x-large;
     }
-    .visible_items{
-        animation: animate_items 1s forwards;
-        /* visibility: visible;
-        position: relative; */
-    }
-    .hide_items{
-        animation: hide_items 0.1s forwards;
-        position: absolute;
-    }
-    @keyframes animate_items {
-        0%{
-            position: relative;
-            visibility: visible;
-        }
-        100%{
-            position: relative;
-            visibility: visible;
-        }
-    }
-    @keyframes hide_items {
-        0%{
-            position: relative;
-            visibility: visible;
-        }
-        99%{
-            position: relative;
-            visibility: hidden;
-        }
-        100%{
-            position: absolute;
-        }
-    }
-
 }

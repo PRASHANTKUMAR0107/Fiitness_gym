@@ -8,6 +8,7 @@ import about_gymimg from "./static/images/6.jpg";
 import insta from "./static/images/insta.png"
 import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
+import { motion } from "framer-motion";
 
 import $ from 'jquery';
 $(window).scroll(function(){
@@ -28,19 +29,43 @@ $(window).scroll(function(){
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
 });
 
+const animate_main = {
+  hidden:{
+    x:-200
+  },
+  visible:{
+    x:0,
+    transition:{
+      type:'spring'
+    }
+  }
+}
+
 const Home = () => {
     return (
     <div className="all">
     <main>
-        <img className="logo_main" src={logo} alt="loading ..." />
+        <motion.img 
+          variants={animate_main}
+          animate="visible"
+          initial="hidden"
+        className="logo_main" src={logo} alt="loading ..." />
         <div>
-        <p className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .
+        <motion.p 
+          variants={animate_main}
+          animate="visible"
+          initial="hidden"
+        className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .
           <span className="flex my-5">
             <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full">Subcribe</button>
             <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full">Contact Us</button>
           </span>
-        </p>
-        <div className="social_media_main">
+        </motion.p>
+        <motion.div className="social_media_main"
+          animate={{x:0}}
+          initial={{x:-200}}
+          transition={{type:'spring'}}
+        >
           <a href="https://www.instagram.com/"> 
             <img className="social_media_main_img" src={wa} alt="" />
           </a>
@@ -50,9 +75,11 @@ const Home = () => {
           <a href="facebook.com"> 
             <img className="social_media_main_img" src={fb} alt="" /> 
           </a>
+          </motion.div>
           </div>
-          </div>
-        <div className="btn explore_more text-red-800"><button className="rounded-full p-1"> <a href="#content"> Explore More </a> <span> <img src={explore_more} alt="" /> </span> </button></div>
+        <div className="btn explore_more text-red-800"><motion.button 
+          whileHover={{zoom:1.2,color:'white'}}
+          className="rounded-full hover:bg-red-600 p-1"> <a href="#content"> Explore More </a> <span> <img src={explore_more} alt="" /> </span> </motion.button></div>
     </main> 
     <div id="content" className="content">
       <div className="motivation">

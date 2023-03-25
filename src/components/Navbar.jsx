@@ -1,29 +1,36 @@
 import "./static/nav.css";
 import logo from "./static/images/fiitness_gym_logo_png1.png";
 import menu from "./static/images/4.png";
-import $ from 'jquery';
 import { Link } from "react-router-dom";
-
+import { useEffect, useState } from "react";
+import { AnimatePresence, easeOut, motion } from "framer-motion";
 const Navbar = () => {
-
-    let visi =1;
+    const [visi,setVisi]=useState(false);
+    useEffect(()=>{
+        if(window.screen.width>600){
+            setVisi(true);
+            console.log("useEffect")
+        }
+    },[])
     let show_items = ()=>{
-        console.log("hello")
         if(visi){
-            visi=0;
-            $(".items").toggleClass("visible_items");
-            $(".items_login").toggleClass("visible_items");
-            $(".items").removeClass("hide_items");
-            $(".items_login").removeClass("hide_items");
+            setVisi(false);
         } else {
-            visi=1;
-            $(".items").toggleClass("visible_items");
-            $(".items_login").toggleClass("visible_items");
-            $(".items").addClass("hide_items");
-            $(".items_login").addClass("hide_items");
-
+            setVisi(true);
         }
     }
+
+const itemvariants = {
+    hidden:{
+        y:-40,
+    },
+    visible:{
+        y:0,
+        transition:{
+            type:'spring',
+        }
+    },
+}
 
     return ( 
         <>
@@ -33,15 +40,21 @@ const Navbar = () => {
                     <p className="italic">Fiitness Gym</p>
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
-                <div className="items">
-                    <div className="items_list"> <Link to={"/"}> Home </Link></div>
-                    <div className="items_list"><Link to={""}> Diet Chart </Link></div>
-                    <div className="items_list"><Link to={""}> Timetable </Link></div>
-                    <div className="items_list"> <Link to={"/about"}> About Us </Link></div>
-                </div>
-                <div className="items_login">
-                    <div className="login">Subscription</div>
-                </div>
+                <AnimatePresence>
+                {visi &&
+                    <motion.div className="items"
+                        variants={itemvariants}
+                        animate="visible"
+                        initial="hidden"
+                    >
+                        <div className="items_list"> <Link to={"/"}> Home </Link></div>
+                        <div className="items_list"><Link to={""}> Diet Chart </Link></div>
+                        <div className="items_list"><Link to={""}> Timetable </Link></div>
+                        <div className="items_list"> <Link to={"/about"}> About Us </Link></div> 
+                        <div className="items_list login"> <Link to={"/subscribe"}> Subscription </Link></div> 
+                    </motion.div>
+                }
+                </AnimatePresence>
             </nav>
         </>
      );
