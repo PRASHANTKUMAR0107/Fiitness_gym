@@ -4,6 +4,8 @@ import menu from "./static/images/4.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { AnimatePresence, easeOut, motion } from "framer-motion";
+import $ from 'jquery';
+
 const Navbar = () => {
     const [visi,setVisi]=useState(false);
     useEffect(()=>{
@@ -19,6 +21,16 @@ const Navbar = () => {
             setVisi(true);
         }
     }
+
+    $(window).scroll(function(){
+        if(window.screen.width>600){
+            if($(window).scrollTop()>600){
+                $("nav").css("background-color",'rgb(32, 32, 32)')
+            } else {
+                $("nav").css("background-color",'rgba(255, 255, 255, 0.04)')
+            }
+        }
+    })
 
 const itemvariants = {
     hidden:{

@@ -1,9 +1,4 @@
 footer{
     z-index: -2;
-    min-height: 50vh;
     background-color: rgb(32, 32, 32);
-}
-
-.footer_section{
-    min-height: 50vh;
 }
