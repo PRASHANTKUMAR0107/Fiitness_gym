@@ -9,6 +9,7 @@ import insta from "./static/images/insta.png"
 import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import $ from 'jquery';
 $(window).scroll(function(){
@@ -36,7 +37,8 @@ const animate_main = {
   visible:{
     x:0,
     transition:{
-      type:'spring'
+      type:'spring',
+      stiffness:200
     }
   }
 }
@@ -57,8 +59,8 @@ const Home = () => {
           initial="hidden"
         className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .
           <span className="flex my-5">
-            <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full">Subcribe</button>
-            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full">Contact Us</button>
+            <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full"> <Link to={'/subscribe'}> Subcribe </Link></button>
+            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full"> <Link> Contact Us </Link> </button>
           </span>
         </motion.p>
         <motion.div className="social_media_main"
