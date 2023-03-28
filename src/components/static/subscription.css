@@ -8,7 +8,7 @@
 }
 .slogan_mem{
     padding: 80px;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px ;
     text-align: center;
     font-size: larger;
@@ -23,7 +23,7 @@
 }
 .card_content{
     background-color: #2e4f4f;
-    background-image: linear-gradient(#2e4f4f8c, #2e4f4fea), url(./images/5.jpg);
+    background-image: linear-gradient(#00000025, #65656569), url(./images/5.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -32,9 +32,18 @@
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(3,1fr);
 }
-.card_content:hover{
-    background-image: linear-gradient(#2e4f4f4a, #2e4f4fea), url(./images/5.jpg);
-    transition: ease-out 200ms;
+
+.beginner{
+    background-image: linear-gradient(#00000075, #65656569), url(./images/begin.jpg);
+}
+.intermediate{
+    background-image: linear-gradient(#00000075, #65656569), url(./images/inter.jpg);
+}
+.advanced{
+    background-image: linear-gradient(#00000075, #65656569), url(./images/advan.jpg);
+}
+.pro{
+    background-image: linear-gradient(#0000004c, #65656569), url(./images/pro.jpg);
 }
 .card_content h2{
     font-size: xx-large;
@@ -43,7 +52,7 @@
 }
 .card_info{
     grid-row: 3/4;
-    background-color: #2e4f4f;
+    background-color: #183752;
     height: 100%;
     padding: 10px;
     display: flex;
@@ -51,7 +60,7 @@
     justify-content: space-around;
 }
 button{
-    background-color: red;
+    background-color: #9e5f0e;
     justify-self: center;
 }
 
@@ -63,7 +72,10 @@ button{
         padding-top: 0px;
     }
     .card{
-        min-height: 30vh;
-        max-height: 30vh;
+        min-height: 35vh;
+        max-height: 35vh;
+    }
+    .slogan_mem{
+        padding-top: 100px;
     }
 }

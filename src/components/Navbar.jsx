@@ -3,7 +3,7 @@ import logo from "./static/images/fiitness_gym_logo_png1.png";
 import menu from "./static/images/4.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { AnimatePresence, easeOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import $ from 'jquery';
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             if($(window).scrollTop()>600){
                 $("nav").css("background-color",'rgb(32, 32, 32)')
             } else {
-                $("nav").css("background-color",'rgba(255, 255, 255, 0.04)')
+                $("nav").css("background-color",'rgba(0, 0, 0, 0.3)')
             }
         }
     })
@@ -48,8 +48,8 @@ const itemvariants = {
         <>
             <nav className="text-white">
                 <div className="header">
-                    <img className="header_logo" src={logo} alt="logo" /> 
-                    <p className="italic">Fiitness Gym</p>
+                    <Link to={'/'}><img className="header_logo" src={logo} alt="logo" /></Link>
+                    <p className="italic"> <Link to={'/'}> Fiitness Gym </Link> </p>
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
                 <AnimatePresence>
@@ -60,8 +60,8 @@ const itemvariants = {
                         initial="hidden"
                     >
                         <div className="items_list"> <Link to={"/"}> Home </Link></div>
-                        <div className="items_list"><Link to={""}> Diet Chart </Link></div>
-                        <div className="items_list"><Link to={""}> Timetable </Link></div>
+                        <div className="items_list"><Link to={"/about"}> Diet Chart </Link></div>
+                        <div className="items_list"><Link to={"/about"}> Timetable </Link></div>
                         <div className="items_list"> <Link to={"/about"}> About Us </Link></div> 
                         <div className="items_list login"> <Link to={"/subscribe"}> Subscription </Link></div> 
                     </motion.div>

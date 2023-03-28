@@ -1,4 +1,7 @@
 import "./static/Footer.css"
+import insta from "./static/images/insta.png"
+import wa from "./static/images/wa.png"
+import fb from "./static/images/fb.png"
 
 const Footer = () => {
     return ( 
@@ -12,12 +15,12 @@ const Footer = () => {
                       Unleash your potential with Fiitness Gym - where fitness meets community.
                       </h5>
                       <div class="mt-6 lg:mb-0 mb-6">
-                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <i class="fab fa-github"></i>
-                        </button>
+                        <button class="bg-gray-900 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                          <img src={insta} alt="" /></button>
+                        <button class="bg-gray-900 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                          <img src={fb} alt="" /></button>
+                        <button class="bg-gray-900 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                          <img src={wa} alt="" /></button>
                       </div>
                     </div>
                     <div class="w-full lg:w-6/12 px-4">

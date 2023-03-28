@@ -1,6 +1,7 @@
 .all{
     background-color: #212929;
     overflow: hidden;
+    min-height: 100vh;
 }
 main{
     height: 100vh;

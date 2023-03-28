@@ -17,16 +17,18 @@ const Subscription = () => {
                     whileHover={{scale:1.1}}
                     transition={{type:'spring',stiffness:200}}
                 className="card">
-                    <div className="card_content">
+                    <Link to={"/form"}>
+                    <div className="card_content beginner">
                         <h2>#Beginner</h2>
                         <motion.div
                             whileHover={{height:200,}}
                         className="card_info">
-                            <p>one-month</p>
-                            <p>$$$$$</p>
-                            <button className="rounded-full bg-red-700 hover:bg-red-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
+                            <p>One Month</p>
+                            <p>Only at just Rs ??</p>
+                            <button className="rounded-full  hover:bg-yellow-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
                         </motion.div>
                     </div>
+                    </Link>
                 </motion.div>
                 <motion.div
                     animate={{x:0}}
@@ -34,16 +36,18 @@ const Subscription = () => {
                     whileHover={{scale:1.1}}
                     transition={{type:'spring',stiffness:200}}
                 className="card">
-                    <div className="card_content">
+                    <Link to={"/form"}>
+                    <div className="card_content intermediate">
                         <h2>#Intermediate</h2>
                         <motion.div
                             whileHover={{height:200,}}
                         className="card_info">
-                            <p>three-month</p>
-                            <p>$$$$$</p>
-                            <button className="rounded-full bg-red-700 hover:bg-red-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
+                            <p>Three Months</p>
+                            <p>Only at just Rs ??</p>
+                            <button className="rounded-full hover:bg-yellow-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
                         </motion.div>
                     </div>
+                    </Link>
                 </motion.div>
                 <motion.div
                     animate={{x:0}}
@@ -51,16 +55,18 @@ const Subscription = () => {
                     whileHover={{scale:1.1}}
                     transition={{type:'spring',stiffness:200}}
                 className="card">
-                    <div className="card_content">
+                    <Link to={"/form"}>
+                    <div className="card_content advanced">
                         <h2>#Advanced</h2>
                         <motion.div
                             whileHover={{height:200,}}
                         className="card_info">
-                            <p>six-month</p>
-                            <p>$$$$$</p>
-                            <button className="rounded-full bg-red-700 hover:bg-red-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
+                            <p>Six Months</p>
+                            <p>Only at just Rs ??</p>
+                            <button className="rounded-full hover:bg-yellow-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
                         </motion.div>
                     </div>
+                    </Link>
                 </motion.div>
                 <motion.div
                     animate={{x:0}}
@@ -68,16 +74,18 @@ const Subscription = () => {
                     whileHover={{scale:1.1}}
                     transition={{type:'spring',stiffness:200}}
                 className="card">
-                    <div className="card_content">
+                    <Link to={"/form"}>
+                    <div className="card_content pro">
                         <h2>#Pro</h2>
                         <motion.div
                             whileHover={{height:200,}}
                         className="card_info">
-                            <p>twelve-month</p>
-                            <p>$$$$$</p>
-                            <button className="rounded-full bg-red-700 hover:bg-red-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
+                            <p>Annual</p>
+                            <p>Only at just Rs ??</p>
+                            <button className="rounded-full hover:bg-yellow-900 p-2"> <Link to={"/form"}> start your journey </Link> </button>
                         </motion.div>
                     </div>
+                    </Link>
                 </motion.div>
             </div>
         </div>

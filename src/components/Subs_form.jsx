@@ -1,21 +1,30 @@
 import "./static/Subs_form.css"
+import { motion } from "framer-motion";
 const Subs_form = () => {
     return ( 
         <div className="all"> 
             <div class="subs_form h-screen md:flex">
 	            <div class="relative overflow-hidden md:flex w-1/2 i justify-around items-center hidden">
-		            <div>
+		            <motion.div
+						animate={{x:0}}
+						initial={{x:-200}}
+						transition={{type:'spring',stiffness:200}}
+					>
 			            <h1 class="text-gray-200 font-bold text-4xl font-sans">Be Fit !</h1>
 			            <p class="text-gray-200 mt-1">Join the Fiitness Gym now</p>
-			            <button type="submit" class="block w-28 bg-gray-200 text-gray-900 mt-4 py-2 rounded-2xl font-bold mb-2">Explore More</button>
-		            </div>
+			            <motion.button whileHover={{scale:1.1}} type="submit" class="block w-28 bg-gray-200 text-gray-900 mt-4 py-2 rounded-2xl font-bold mb-2">Explore More</motion.button>
+		            </motion.div>
 		        <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		        <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		        <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		        <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 	        </div>
 	        <div class="data flex md:w-1/2 justify-center py-10 items-center">
-		        <form class="data form">
+		        <motion.form 
+					animate={{x:0}}
+                    initial={{x:-200}} 
+                    transition={{type:'spring',stiffness:200}}
+				class="data form">
 			        <h1 class="text-gray-300 font-bold text-2xl mb-1">Hello Again!</h1>
 			        <p class="text-sm font-normal text-gray-200 mb-7">"Take care of your body. It's the only place you have to live."</p>
 			        <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
@@ -51,7 +60,7 @@ const Subs_form = () => {
       </div>
 							<button type="submit" class="block w-full bg-red-800 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Enroll</button>
 							<span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">aaa</span>
-		</form>
+		</motion.form>
 	</div>
 </div>
         </div>
