@@ -1,12 +1,35 @@
 .data{
     background-color: #183752;
 }
+.warning{
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    color: rgb(250, 73, 73);
+}
+.sb_btn{
+    background-color: #7f848a5e;
+}
+.sb_btn:hover{
+    background-color: #212929;
+}
+.form_box{
+    padding-top: 110px;
+    background-color: #183752;
+}
+.form{
+    /* margin-top: 50px; */
+    background-color: #183752;
+}
 @media only screen and (max-width:800px){
-    .subs_form{
-        padding: 5px;
-        padding-top: 100px;
+    .form_box{
+        padding: 20px;
+        background-color: transparent;
     }
     .form{
-        padding: 20px;
+        padding: 20px ;
+        margin-top: 50px;
+        border-radius: 20px;
     }
 }

@@ -3,12 +3,18 @@
     overflow: hidden;
     min-height: 100vh;
 }
+/* .bg_main{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    bottom: 0%;
+} */
 main{
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.112), #212929c4), url(../images/1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #212929;
+    background-size: 150%;
+    background-color: #2129290d;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -27,6 +33,15 @@ main::before{
     justify-self: flex-end;
     height: 50vh;
     position: static;
+}
+.fit_main{
+    justify-self: flex-start;
+    scale: 150%;
+    margin-left: 50px;
+}
+.fit_mob{
+    position: fixed;
+    visibility: hidden;
 }
 .content{
     margin-top: 100px;
@@ -55,28 +70,25 @@ main::before{
     letter-spacing: 2px;
 }
 .hero{
-    background-color: #183752;
     margin: 15px;
     margin-top: 40px;
     margin-bottom: 60px;
-    padding: 60px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    grid-gap: 10px;
-    border-radius: 20px;
+    grid-gap: 20px;
     text-align: center;
 }
 .hero_items{
+    background-color: #183752;
     display: grid;
     grid-gap: 10px;
+    padding: 30px;
+    height: 40vh;
+    border-radius: 20px;
 }
 .hero_items:hover{
-    filter: brightness(25);
-}
-.two{
-    border-right: 2px solid gray;
-    border-left: 2px solid gray;
+    /* filter: brightness(25); */
 }
 .hero img{
     filter: invert();
@@ -88,7 +100,7 @@ main::before{
     font-size: 14px;
 }
 .hero_img:hover{
-    /* filter:brightness(50); */
+    filter:brightness(50);
 }
 .hero h3{
     justify-self: center;
@@ -106,9 +118,13 @@ main::before{
 }
 .about_gym h3{
     letter-spacing: 10px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
 }
 .about_gym span{
     letter-spacing: 2px;
+    padding: 5px;
 }
 .about_gym_img{
     object-fit: cover;
@@ -117,6 +133,7 @@ main::before{
 }
 .social_media{
     display: flex;
+    flex-direction: row;
 }
 .social_media a{
     display: flex;
@@ -125,6 +142,7 @@ main::before{
 .social_media_img{
     height: 20px;
     margin-right: 5px;
+    margin-bottom: 2px;
 }
 .social_media_main{
     position: absolute;
@@ -140,23 +158,23 @@ main::before{
     margin-right: 10px;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
     main{
         background-image:linear-gradient(rgba(255, 255, 255, 0), #212929e7), url(../images/5.jpg);
         background-size: cover;
         height: 93vh;
-    }
-    .main_text{
-        font-size: 45px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        line-height: 1.3;
+        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        justify-content: center;
+        /* overflow: hidden; */
+        /* width: 100vw; */
     }
     .main_text button{
         font-size:small;
     }
     .logo_main{
         visibility: hidden;
+        position: fixed;
     }
     .content{
         padding: 20px;
@@ -165,13 +183,6 @@ main::before{
         grid-template-columns: repeat(1,1fr);
         margin: 20px;
     }
-    .two{
-        border: none;
-        border-top: 2px solid gray;
-        border-bottom: 2px solid gray;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
     .about_gym{
         grid-template-columns: repeat(1,1fr);
         margin: 20px;
@@ -179,7 +190,11 @@ main::before{
         /* text-align: center; */
     }
     .about_gym h3{
-        font-size: 72px;
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+    .about_gym span{
+        font-size: 20px;
     }
     main::before{
         height: 200px;
@@ -187,7 +202,25 @@ main::before{
     .social_media_main{
         display: flex;
         position: relative;
-        margin-left: 0%;
+        /* margin-left: 0%; */
+        justify-content: center;
         z-index: 15;
+    }
+    .social_media{
+        flex-direction: column;
+    }
+    .main_text{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .fit_main{
+        visibility: hidden;
+        position: fixed;
+    }
+    .fit_mob{
+        visibility: visible;
+        position: relative;
+        scale: 0.8;
     }
 }

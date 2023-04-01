@@ -1,0 +1,60 @@
+.all_abt{
+    background-color: #212929f3;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    color: rgb(255, 255, 255);
+}
+.about_main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.112), #212929c4), url(./images/ab2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.abt_one{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    border-left: 20px rgba(255, 255, 255, 0.2) solid;
+    border-top: 20px rgba(255, 255, 255, 0.2) solid;
+    border-bottom: 20px rgba(255, 255, 255, 0.2) solid;
+}
+.abt_head{
+}
+.abt_head p{
+    letter-spacing: 10px;
+    font-weight: 700;
+    height: 100%;
+}
+.our_mission{
+    text-align: right;
+    letter-spacing: 1px;
+}
+.our_mission h3{
+    font-size: 90px;
+    border-right: 20px solid rgba(255, 255, 255, 0.2);
+    line-height: 100px;
+    letter-spacing: 5px;
+}
+.para{
+    font-size: small;
+}
+
+@media only screen and (max-width: 900px){
+    .abt_one{
+        grid-template-columns: repeat(1,1fr);
+        /* padding: 5%; */
+    }
+    .abt_head p{
+        font-size: xx-large;
+        border-right: 20px rgba(255, 255, 255, 0.2) solid;
+    }
+    .our_mission h3{
+        font-size: larger;
+    }
+}

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import $ from 'jquery';
-
+import {HashLink} from "react-router-hash-link";
 const Navbar = () => {
     const [visi,setVisi]=useState(false);
     useEffect(()=>{
-        if(window.screen.width>600){
+        if(window.screen.width>=900){
             setVisi(true);
-            console.log("useEffect")
+            // console.log("useEffect")
         }
     },[])
     let show_items = ()=>{
@@ -23,11 +23,11 @@ const Navbar = () => {
     }
 
     $(window).scroll(function(){
-        if(window.screen.width>600){
+        if(window.screen.width>900){
             if($(window).scrollTop()>600){
                 $("nav").css("background-color",'rgb(32, 32, 32)')
             } else {
-                $("nav").css("background-color",'rgba(0, 0, 0, 0.3)')
+                $("nav").css("background-color",'rgba(32, 32, 32, 0.2)')
             }
         }
     })
@@ -49,7 +49,7 @@ const itemvariants = {
             <nav className="text-white">
                 <div className="header">
                     <Link to={'/'}><img className="header_logo" src={logo} alt="logo" /></Link>
-                    <p className="italic"> <Link to={'/'}> Fiitness Gym </Link> </p>
+                    <p className="italic font-extrabold"> <Link to={'/'}> Fiitness Gym </Link> </p>
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
                 <AnimatePresence>
@@ -60,10 +60,10 @@ const itemvariants = {
                         initial="hidden"
                     >
                         <div className="items_list"> <Link to={"/"}> Home </Link></div>
-                        <div className="items_list"><Link to={"/about"}> Diet Chart </Link></div>
+                        <div className="items_list"><Link to={"/about"}> Contact Us </Link></div>
                         <div className="items_list"><Link to={"/about"}> Timetable </Link></div>
                         <div className="items_list"> <Link to={"/about"}> About Us </Link></div> 
-                        <div className="items_list login"> <Link to={"/subscribe"}> Subscription </Link></div> 
+                        <div className="items_list login font-bold"> <Link to={"/subscribe"}> Subscription </Link></div> 
                     </motion.div>
                 }
                 </AnimatePresence>

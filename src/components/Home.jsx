@@ -10,15 +10,16 @@ import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import fit from "./static/images/fitnessMAIN.png"
+import fitmob from "./static/images/fitmob.png"
 import $ from 'jquery';
 $(window).scroll(function(){
-  if(window.screen.width>600){
+  if(window.screen.width>900){
     $("main")
-      .css("background-size", (100 + 100 * $(window).scrollTop() / 500) + "%");
+      .css("background-size", (150 + 100 * $(window).scrollTop() / 500) + "%");
   } else {
     $("main")
-      .css("background-size", (110 + 100 * $(window).scrollTop() / 500) + "%");
+      .css("background-size", (110 + 100 * $(window).scrollTop() / 1000) + "%");
   }
     $(".logo_main")
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
@@ -47,34 +48,39 @@ const Home = () => {
     return (
     <div className="all">
     <main>
+        {/* <div className="bg_main">
+          <img src={bg} alt="" />
+        </div> */}
         <motion.img 
           variants={animate_main}
           animate="visible"
           initial="hidden"
         className="logo_main" src={logo} alt="loading ..." />
         <div>
-        <motion.p 
+        <motion.div
           variants={animate_main}
           animate="visible"
           initial="hidden"
-        className="main_text text-7xl text-gray-100">A fitness movement that is worth breaking a sweat for .
-          <span className="flex my-5">
+        className="main_text flex flex-col pt-10">
+          <img className="fit_mob invert" src={fitmob} alt="" />
+          <img className="fit_main invert my-12 ml-10" src={fit} alt="" />
+          <span className="flex my-5 justify-center z-10">
             <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full"> <Link to={'/subscribe'}> Subcribe </Link></button>
-            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full"> <Link> Contact Us </Link> </button>
+            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full"> <Link> Gallery </Link> </button>
           </span>
-        </motion.p>
+        </motion.div>
         <motion.div className="social_media_main"
           animate={{x:0}}
           initial={{x:-200}}
           transition={{type:'spring'}}
         >
-          <a href="https://www.instagram.com/"> 
+          <a href="https://wa.me/9958500365" target={'blank'}> 
             <img className="social_media_main_img" src={wa} alt="" />
           </a>
-          <a href="https://www.instagram.com/"> 
+          <a href="https://www.instagram.com/365fiitness_/" target={'blank'}> 
             <img className="social_media_main_img" src={insta} alt="" />
           </a>
-          <a href="facebook.com"> 
+          <a href="https://wa.me/9958500365" target={'blank'}> 
             <img className="social_media_main_img" src={fb} alt="" /> 
           </a>
           </motion.div>
@@ -89,13 +95,13 @@ const Home = () => {
         "You don't have to be great to start, but you have to start to be great."
         </p>
       </div>
-      <div className="hero ">
+      <div id="hero" className="hero ">
         <div className="hero_items">
-          <img className="hero_img" src={hero1} alt="loading ..." />
+          <img className="hero_img " src={hero1} alt="loading ..." />
           <h3>Modern Equipments to Train</h3>
           <p className="text-gray-300">Train using state of the art modern equipment 24/7. Get fit to suiting your timetable and schedule. Workout and drive yourself to your limits at your own pace.</p>
         </div>
-        <div className="hero_items two px-2">
+        <div className="hero_items">
           <img className="hero_img" src={hero2} alt="loading ..." />
           <h3>Healthy Diet Plans</h3>
           <p className="text-gray-300">Fitness is all about planning and sticking to routine. Make exercise your habit with small short term goals with an ultimate long-term goal.</p>
@@ -109,17 +115,21 @@ const Home = () => {
       <div className="about_gym">
         <img className="about_gym_img" src={about_gymimg} alt="loading ..." />
         <div>
-          <h3 className="text-9xl my-5">365 </h3>
-          <p className="text-gray-300">days of fitness . . . Staying healthy is not always easy, but it is always worth it. When you prioritize your health, you have more energy, feel more confident, and are better equipped to handle whatever challenges come your way. Whether you're looking to lose weight, build muscle, or simply feel better in your own skin, taking care of yourself is the key to achieving your goals. So don't give up, even when it gets tough. Every healthy choice you make is a step in the right direction, and each day is a new opportunity to become the best version of yourself. Remember that you are worth the effort, and that a healthy lifestyle is the best gift you can give yourself. So you can also follow us on other social media platforms to stay motivated and fit.</p>
+          <h3 className="text-9xl my-5"> <i>365</i><span className="text-5xl">days of fitness.</span> </h3>
+          <p className="text-gray-300"> Staying healthy is not always easy, but it is always worth it. When you prioritize your health, you have more energy, feel more confident, and are better equipped to handle whatever challenges come your way. Whether you're looking to lose weight, build muscle, or simply feel better in your own skin, taking care of yourself is the key to achieving your goals. So don't give up, even when it gets tough. Every healthy choice you make is a step in the right direction, and each day is a new opportunity to become the best version of yourself. Remember that you are worth the effort, and that a healthy lifestyle is the best gift you can give yourself. So you can also follow us on other social media platforms to stay motivated and fit.</p>
           <br />
           <div className="social_media">
-          <a href="https://www.instagram.com/"> 
-            <img className="social_media_img" src={insta} alt="" />
-            <p>instahandle</p>
+          <a href="https://www.instagram.com/365fiitness_/" target={'blank'}> 
+            <img className="social_media_img" src={insta} alt="loading ..." />
+            <p>365fiitness_</p>
           </a>
-          <a href="facebook.com"> 
-            <img className="social_media_img" src={fb} alt="" /> 
-            <p>fbhandle</p>
+          <a href="https://wa.me/9958500365" target={'blank'}> 
+            <img className="social_media_img" src={wa} alt="loading..." /> 
+            <p>WhatsApp Number</p>
+          </a>
+          <a href="https://wa.me/9667769365" target={'blank'}> 
+            <img className="social_media_img" src={wa} alt="loading..." /> 
+            <p>Alternate WhatsApp Number</p>
           </a>
           </div>
         </div>

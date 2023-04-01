@@ -1,4 +1,22 @@
+.all_subs{
+    background-color: #212929f3;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.dbell{
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: -12%;
+    /* transform: rotate(90deg); */
+}
+.dbell img{
+    height: 100vh;
+    width: 70vh;
+}
 .subs{
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
@@ -12,9 +30,7 @@
     padding-bottom: 50px ;
     text-align: center;
     font-size: larger;
-}
-.cir{
-    z-index: 0;
+    z-index: 2;
 }
 .card{
     min-height: 50vh;
@@ -47,7 +63,6 @@
 }
 .card_content h2{
     font-size: xx-large;
-    letter-spacing: 5px;
     margin-top: 20px;
 }
 .card_info{
@@ -58,13 +73,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    bottom: 0%;
 }
 button{
-    background-color: #9e5f0e;
+    background-color: #7f848a5e;
     justify-self: center;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1000px){
     .subs{
         grid-template-columns: repeat(1,1fr);
         padding: 50px;
@@ -77,5 +93,14 @@ button{
     }
     .slogan_mem{
         padding-top: 100px;
+    }
+    .dbell{
+        position: fixed;
+        width: 150%;
+        left: -45%;
+        top:8%;
+    }
+    .dbell img{
+        width: 150%;
     }
 }

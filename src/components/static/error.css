@@ -1,0 +1,48 @@
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    padding: 50px;
+    margin-top: 50px;
+    min-height: 80vh;
+    width: 80%;
+    background-color:rgba(239, 221, 221, 0.654);
+    justify-items: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.white button{
+    margin-top: 10px;
+}
+.home_btn{
+    background-color: #212929d1;
+    font-size: larger;
+}
+.re_btn{
+    background-color: #ae2525;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1100px) {
+    .white{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .white h1{
+        font-size: xx-large;
+    }
+    .white button{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .white img{
+        height: 25vh;
+    }
+}

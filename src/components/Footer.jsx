@@ -2,7 +2,7 @@ import "./static/Footer.css"
 import insta from "./static/images/insta.png"
 import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
-
+import { Link } from "react-router-dom"
 const Footer = () => {
     return ( 
         <>
@@ -16,43 +16,40 @@ const Footer = () => {
                       </h5>
                       <div class="mt-6 lg:mb-0 mb-6">
                         <button class="bg-gray-900 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <img src={insta} alt="" /></button>
+                          <a href="https://www.instagram.com/365fiitness_/" target={"blank"}><img src={insta} alt="" /></a></button>
                         <button class="bg-gray-900 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                           <img src={fb} alt="" /></button>
                         <button class="bg-gray-900 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <img src={wa} alt="" /></button>
+                          <a href="https://wa.me/9958500365" target={'blank'}> <img src={wa} alt="" /> </a></button>
                       </div>
                     </div>
                     <div class="w-full lg:w-6/12 px-4">
                       <div class="flex flex-wrap items-top mb-6">
                         <div class="w-full lg:w-4/12 px-4 ml-auto">
-                          <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                          <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2 underline">Useful Links</span>
                           <ul class="list-unstyled">
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
+                              <Link class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" to={"/about"}>About Us</Link>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Diet Plan</a>
+                              <Link class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" to={"/gallery"}>Gallery</Link>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Timetable</a>
-                            </li>
-                            <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Subscription</a>
+                              <Link class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" to={"/subscribe"}>Subscription</Link>
                             </li>
                           </ul>
                         </div>
                         <div class="w-full lg:w-4/12 px-4">
-                          <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                          <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2 underline">Other Resources</span>
                           <ul class="list-unstyled">
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">instagram</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://www.instagram.com/365fiitness_/">instagram</a>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">facebook</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="#">facebook</a>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">whatsapp</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://wa.me/9958500365">whatsapp</a>
                             </li>
                           </ul>
                         </div>
