@@ -58,34 +58,54 @@ const AboutUs = () => {
                 </div>
                 <div className="concard_grid">
                     <div className="con_card">
+                    <a href="https://www.instagram.com/365fiitness_/" target="_blank">
                         <img className="h-8 w-8 m-2" src={insta} alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/365fiitness_/" target="_blank">
                         <p> <span className="text-lg"> 365fiitness_  </span> <br /> Follow us on Instagram and Stay tuned to the Fiitness.</p>
+                    </a>
                     </div>
                     <div className="con_card">
+                    <a href="https://wa.me/9958500365" target="_blank">
                         <img className="h-8 w-8 m-2" src={wa} alt="" />
+                    </a>
+                    <a href="https://wa.me/9958500365" target="_blank">
                         <p> <span className="text-lg">  WhatsApp Link </span> <br /> Click to chat with us now, we will be happy to serve you.</p>
+                    </a>
                     </div>
                     <div className="con_card">
+                    <a href="https://wa.me/9667769365" target="_blank">
                         <img className="h-8 w-8 m-2" src={wa} alt="" />
+                    </a>
+                    <a href="https://wa.me/9667769365" target="_blank">
                         <p> <span className="text-lg">  Alternate WhatsApp Link </span> <br /> Click to chat with us now, we will be happy to serve you.</p>
+                    </a>
                     </div>
                     <div className="con_card">
+                    <a href="" target="_blank">
                         <img className="h-8 w-8 m-2" src={fb} alt="" />
+                    </a>
+                    <a href="" target="_blank">
                         <p> <span className="text-lg">  Fbhandle </span> <br /> Follow us on Facebook and Stay tuned to the Fiitness.</p>
+                    </a>    
                     </div>
                     <div className="con_card mail">
+                    <a href="mailto:fiitness365gym@gmail.com" target="_blank">
                         <img className="h-10 w-8 m-2 invert" src={mail} alt="" />
+                    </a>
+                    <a href="mailto:fiitness365gym@gmail.com" target="_blank">
                         <p> <span className="text-lg"> fiitness365gym @gmail.com </span> <br /> You can mail us about any of your queries.</p>
+                    </a>
                     </div>
                 </div>
                 <hr className=" m-2 mx-10 opacity-20"/>
                 <div className="address">
-                    <div className="flex">
-                        <h3>Phone Number : </h3>
+                    <div className="flex p-1">
+                        <h3>Phone Number: </h3>
                         <p> 9958500365 <br /> 9667769365</p>
                     </div>
-                    <div className="flex">
-                        <h3>Address : </h3>
+                    <div className="flex p-1">
+                        <h3>Address: </h3>
                         <p>E-986 Ground Floor, <br /> CR Park</p>
                     </div>
                 </div>

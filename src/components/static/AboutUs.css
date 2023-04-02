@@ -155,4 +155,8 @@
     .mail{
         grid-column: span 2;
     }
+    .our_mission h3{
+        line-height: normal;
+        padding-top: 30px;
+    }
 }
