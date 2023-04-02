@@ -1,4 +1,8 @@
-import "./static/AboutUs.css"
+import "./static/AboutUs.css";
+import insta from "./static/images/insta.png"
+import wa from "./static/images/wa.png"
+import fb from "./static/images/fb.png"
+import mail from "./static/images/mail.png"
 const AboutUs = () => {
     return ( 
     <div className="all_abt">
@@ -14,12 +18,81 @@ const AboutUs = () => {
             </div>
         </div>
 
-        <div className="services">
-            <div className="serve_head">
-                <h3>SERVICES OFFERED</h3>
-            <p className="para m-8 mb-0 text-lg"> We offer a variety of services to help our members achieve their fitness goals. From group fitness classes to personal training and nutrition coaching, we have everything you need to get in shape and stay healthy. We also offer nutrition coaching to help you fuel your body with the right foods and achieve optimal health. Our nutrition experts will work with you to develop a customized meal plan and provide ongoing support and guidance to help you make healthy choices. At Fiitness Gym, we are committed to providing the highest quality fitness services to our members. We are constantly updating and improving our programs to ensure that we are meeting the needs and goals of our members. Join us today and experience the benefits of a healthier, more active lifestyle!</p>
+        <div className="content_abt">
+            <div className="services">
+                <div className="serve_head">
+                    <h3>SERVICES OFFERED</h3><hr className="mb-5" />
+                </div>
+                <div className="serve">
+                    <div className="serve_card">
+                        <h3>Personal Training</h3>
+                        <p>At Fiitness Gym, we understand that each person's fitness journey is unique, which is why we offer personalized training programs to help you achieve your individual goals. Our certified personal trainers have the knowledge and experience to develop a customized fitness plan that is tailored to your specific needs, abilities, and preferences. During your personal training sessions, your trainer will work with you to identify your fitness goals and develop a plan that is challenging and effective. They will guide you through each exercise, ensuring that your form and technique are correct and that you are working at an appropriate intensity. Additionally, they will provide you with the support and accountability you need to stay motivated and on track.</p>
+                    </div>
+                    <div className="serve_card">
+                        <h3>Diet Plans</h3>
+                        <p>At Fiitness Gym, we believe that nutrition is a critical component of any fitness program, which is why we offer nutrition coaching to our members. Our certified nutritionists have the expertise to help you develop a personalized diet plan that is tailored to your specific goals, preferences, and lifestyle. During your nutrition coaching sessions, your coach will work with you to assess your current eating habits and identify areas where you can make improvements. They will help you set realistic and achievable goals, and develop a meal plan that is balanced and sustainable. They can also provide you with guidance on portion control, healthy snacking, and eating out, to ensure that you are making healthy choices wherever you are.</p>
+                    </div>
+                    <div className="serve_card">
+                        <h3>Machinery</h3>
+                        <p>At Fiitness Gym, we pride ourselves on providing our members with state-of-the-art equipment to help them achieve their fitness goals. Our gym is equipped with the latest and most innovative machines and tools that cater to a wide range of fitness levels and abilities. We offer a variety of cardio equipment, including treadmills, ellipticals, stationary bikes, and rowing machines, to help you improve your cardiovascular health and endurance. Our strength training equipment includes free weights, weight machines, and resistance bands, to help you build and tone your muscles.</p>
+                    </div>
+                    <div className="serve_card">
+                        <h3>Gym Facilities and Amenities</h3>
+                        <p>At Fiitness Gym, we strive to provide our members with a top-notch fitness experience. Our gym facilities and amenities are designed to create a comfortable and welcoming environment that will inspire you to reach your fitness goals. Our gym space is spacious, clean, and well-lit, with a variety of state-of-the-art equipment and machines to suit all fitness levels and interests. We offer a wide range of cardio machines, strength training equipment, and functional training tools to help you get the most out of your workout. Our equipment is regularly maintained and upgraded to ensure that it is in optimal condition for your use.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="time" className="time">
+                <div  className="time_head">
+                    <h3>Timmings</h3> <hr className="mb-5"/>
+                </div>
+                <div className="timming mb-5">
+                    <p>5 AM to 12 AM</p>
+                    <p>Opens 7days in a Week</p>
+                </div>
+                <hr />
+            </div>
+            <div id="contact" className="contact">
+                <div className="con_head">
+                    <h3>Contact Details</h3> <hr className="mb-5"/>
+                </div>
+                <div className="concard_grid">
+                    <div className="con_card">
+                        <img className="h-8 w-8 m-2" src={insta} alt="" />
+                        <p> <span className="text-lg"> 365fiitness_  </span> <br /> Follow us on Instagram and Stay tuned to the Fiitness.</p>
+                    </div>
+                    <div className="con_card">
+                        <img className="h-8 w-8 m-2" src={wa} alt="" />
+                        <p> <span className="text-lg">  WhatsApp Link </span> <br /> Click to chat with us now, we will be happy to serve you.</p>
+                    </div>
+                    <div className="con_card">
+                        <img className="h-8 w-8 m-2" src={wa} alt="" />
+                        <p> <span className="text-lg">  Alternate WhatsApp Link </span> <br /> Click to chat with us now, we will be happy to serve you.</p>
+                    </div>
+                    <div className="con_card">
+                        <img className="h-8 w-8 m-2" src={fb} alt="" />
+                        <p> <span className="text-lg">  Fbhandle </span> <br /> Follow us on Facebook and Stay tuned to the Fiitness.</p>
+                    </div>
+                    <div className="con_card mail">
+                        <img className="h-10 w-8 m-2 invert" src={mail} alt="" />
+                        <p> <span className="text-lg"> fiitness365gym @gmail.com </span> <br /> You can mail us about any of your queries.</p>
+                    </div>
+                </div>
+                <hr className=" m-2 mx-10 opacity-20"/>
+                <div className="address">
+                    <div className="flex">
+                        <h3>Phone Number : </h3>
+                        <p> 9958500365 <br /> 9667769365</p>
+                    </div>
+                    <div className="flex">
+                        <h3>Address : </h3>
+                        <p>E-986 Ground Floor, <br /> CR Park</p>
+                    </div>
+                </div>
+                <hr className="mt-5"/>
             </div>
         </div>
+
     </div> 
     );
 }

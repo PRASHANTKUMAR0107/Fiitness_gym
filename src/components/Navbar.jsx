@@ -60,8 +60,8 @@ const itemvariants = {
                         initial="hidden"
                     >
                         <div className="items_list"> <Link to={"/"}> Home </Link></div>
-                        <div className="items_list"><Link to={"/about"}> Contact Us </Link></div>
-                        <div className="items_list"><Link to={"/about"}> Timetable </Link></div>
+                        <div className="items_list"><HashLink to={"/about#contact"}> Contact Us </HashLink></div>
+                        <div className="items_list"><HashLink to={"/about#time"}> Timmings </HashLink></div>
                         <div className="items_list"> <Link to={"/about"}> About Us </Link></div> 
                         <div className="items_list login font-bold"> <Link to={"/subscribe"}> Subscription </Link></div> 
                     </motion.div>

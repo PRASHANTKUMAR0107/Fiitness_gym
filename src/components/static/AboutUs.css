@@ -44,7 +44,81 @@
 .para{
     font-size: small;
 }
-
+.content_abt{
+    overflow: hidden;
+    z-index: 5;
+    background-color: #212929;
+    min-height: 150vh;
+    padding: 60px;
+}
+.services{
+    background-color: #18375200;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.serve_head{
+    font-size: 50px;
+    /* border-left: 20px rgba(255, 255, 255, 0.2) solid; */
+}
+.serve_head h3{
+    text-shadow: #0000008e 8px 2px;
+}
+.serve{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.serve_card{
+    background-color: #183752;
+    padding: 30px;
+    text-align: center;
+    min-height: 45vh;
+    border-radius: 20px;
+}
+.serve_card h3{
+    font-size: x-large;
+    text-decoration: underline gray ;
+}
+.time{
+    text-align: center;
+}
+.time_head{
+    font-size: 50px;
+    text-shadow: #0000008e 8px 2px;
+}
+.timming{
+    background-color: #183752;
+    border-radius: 20px;
+    padding: 20px;
+}
+.contact{
+    text-align: center;
+    margin-top: 40px;
+}
+.con_head{
+    font-size: 50px;
+    text-shadow: #0000008e 8px 2px;
+}
+.concard_grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+}
+.con_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #183752;
+    border-radius: 20px;
+    padding: 20px;
+}
+.address{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
 @media only screen and (max-width: 900px){
     .abt_one{
         grid-template-columns: repeat(1,1fr);
@@ -56,5 +130,29 @@
     }
     .our_mission h3{
         font-size: larger;
+    }
+    .content_abt{
+        padding: 20px;
+    }
+    .services{
+        padding: 20px;
+    }
+    .serve_head{
+        font-size: 30px;
+    }
+    .services p{
+        font-size: small;
+    }
+    .serve{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .serve_card{
+        padding: 20px;
+    }
+    .concard_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mail{
+        grid-column: span 2;
     }
 }
