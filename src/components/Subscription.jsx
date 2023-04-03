@@ -48,8 +48,8 @@ const Subscription = (props) => {
 					action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefeH6EjwYIMHrn-ePsh7TqyOjgpRbNN-wM6BME-Z8wnC369Q/formResponse"
 					method="POST"
 				className="form flex flex-col">
-			        <h1 className="text-gray-300 font-bold text-2xl mb-1">Hello Again!</h1>
-			        <p className="text-sm font-normal text-gray-200 mb-7">"Take care of your body. It's the only place you have to live."</p>
+			        <h1 className="text-gray-300 font-bold text-xl mb-1">Hello Again!</h1>
+			        <p className="text-sm font-normal text-gray-200 mb-2">"Take care of your body. It's the only place you have to live."</p>
                     <div className="form_input">
                         <input className="name rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.2005620554" id="" placeholder="Full Name" required autoComplete="off"/>
                         <select className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" id="" name="entry.1522433412">

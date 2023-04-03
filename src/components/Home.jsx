@@ -16,35 +16,33 @@ import $ from 'jquery';
 $(window).scroll(function(){
   if(window.screen.width>900){
     $("main")
-      .css("background-size", (150 + 100 * $(window).scrollTop() / 500) + "%");
+    .css("background-size", (150 + 100 * $(window).scrollTop() / 500) + "%");
+    $(".logo_main")
+    .css("scale",(100 + 100 * window.pageYOffset / 1000) + "%");
+    $(".main_text")
+        .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
   } else {
     $("main")
-      .css("background-size", (120 + 100 * $(window).scrollTop() / 1000) + "%");
+    .css("background-size", (120 + 100 * $(window).scrollTop() / 1000) + "%");
   }
-    $(".logo_main")
-      .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
-    // $(".logo_main")
-    //   .css("transform","rotate(" + window.pageYOffset/2 + "deg)");
-    $(".logo_main")
-      .css("scale",(100 + 100 * window.pageYOffset / 1000) + "%");
-    $(".main_text")
-      .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
+  $(".logo_main")
+  .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
 });
 
-const load=()=>{
-  if(window.screen.width<900){
-    $("main")
-    .css("height",(window.innerHeight));
-  }
-}
-
-const animate_main = {
-  hidden:{
-    x:-200
-  },
-  visible:{
-    x:0,
-    transition:{
+    const load=()=>{
+      if(window.screen.width<900){
+        $("main")
+        .css("height",(window.innerHeight));
+      }
+    }
+    
+    const animate_main = {
+      hidden:{
+        x:-200
+      },
+      visible:{
+        x:0,
+        transition:{
       type:'spring',
       stiffness:200
     }

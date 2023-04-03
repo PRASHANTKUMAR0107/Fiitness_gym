@@ -154,7 +154,7 @@ main::before{
 
 @media only screen and (max-width:800px){
     main{
-        background-image:linear-gradient(rgba(255, 255, 255, 0), #212929e7), url(../images/5.jpg);
+        background-image:linear-gradient(rgba(255, 255, 255, 0), #212929), url(../images/5.jpg);
         background-size: cover;
         /* grid-template-columns: repeat(1,1fr); */
         display: flex;
@@ -188,8 +188,11 @@ main::before{
     .about_gym span{
         font-size: 20px;
     }
+    .about_gym_img{
+        height: auto;
+    }
     main::before{
-        height: 200px;
+        visibility: hidden;
     }
     .social_media_main{
         display: flex;
