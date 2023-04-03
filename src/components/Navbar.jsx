@@ -32,6 +32,14 @@ const Navbar = () => {
         }
     })
 
+    const outside=()=>{
+        if(window.screen.width<900){
+            if(visi){
+                setVisi(false);
+            }
+        }
+    }
+
 const itemvariants = {
     hidden:{
         y:-40,
@@ -46,7 +54,7 @@ const itemvariants = {
 
     return ( 
         <>
-            <nav className="text-white">
+            <nav onMouseOut={outside} className="text-white">
                 <div className="header">
                     <Link to={'/'}><img className="header_logo" src={logo} alt="logo" /></Link>
                     <p className="italic font-extrabold"> <Link to={'/'}> Fiitness Gym </Link> </p>

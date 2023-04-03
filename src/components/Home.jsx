@@ -19,7 +19,7 @@ $(window).scroll(function(){
       .css("background-size", (150 + 100 * $(window).scrollTop() / 500) + "%");
   } else {
     $("main")
-      .css("background-size", (110 + 100 * $(window).scrollTop() / 1000) + "%");
+      .css("background-size", (120 + 100 * $(window).scrollTop() / 1000) + "%");
   }
     $(".logo_main")
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
@@ -30,6 +30,11 @@ $(window).scroll(function(){
     $(".main_text")
       .css("margin-top",(0 + 100 * $(window).scrollTop() / 250) + "%");
 });
+
+const load=()=>{
+  $("main")
+  .css("height",(window.innerHeight));
+}
 
 const animate_main = {
   hidden:{
@@ -47,7 +52,7 @@ const animate_main = {
 const Home = () => {
     return (
     <div className="all">
-    <main>
+    <main onLoad={load}>
         {/* <div className="bg_main">
           <img src={bg} alt="" />
         </div> */}

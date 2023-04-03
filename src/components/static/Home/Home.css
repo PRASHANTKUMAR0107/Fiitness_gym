@@ -3,12 +3,6 @@
     overflow: hidden;
     min-height: 100vh;
 }
-/* .bg_main{
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    bottom: 0%;
-} */
 main{
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.112), #212929c4), url(../images/1.jpg);
@@ -22,7 +16,7 @@ main{
 }
 main::before{
     z-index: 10;
-    bottom: 0%;
+    bottom: -1%;
     content: '';
     position: absolute;
     height: 150px;
@@ -84,7 +78,7 @@ main::before{
     display: grid;
     grid-gap: 10px;
     padding: 30px;
-    height: 40vh;
+    /* min-height: 40vh; */
     border-radius: 10px;
 }
 .hero_items:hover{
@@ -109,7 +103,7 @@ main::before{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2,1fr);
-    margin: 15px;
+    margin: 1%;
     margin-top: 40px;
     margin-bottom: 60px;
     padding: 60px;
@@ -162,7 +156,6 @@ main::before{
     main{
         background-image:linear-gradient(rgba(255, 255, 255, 0), #212929e7), url(../images/5.jpg);
         background-size: cover;
-        height: 93vh;
         grid-template-columns: repeat(1,1fr);
         display: flex;
         justify-content: center;
@@ -177,15 +170,15 @@ main::before{
         position: fixed;
     }
     .content{
-        padding: 20px;
+        padding: 2%;
     }
     .hero{
         grid-template-columns: repeat(1,1fr);
-        margin: 20px;
+        margin: 1%;
     }
     .about_gym{
+        margin-top: 20px;
         grid-template-columns: repeat(1,1fr);
-        margin: 20px;
         padding: 30px;
         /* text-align: center; */
     }
@@ -210,9 +203,10 @@ main::before{
         flex-direction: column;
     }
     .main_text{
-        padding: 20px;
+        /* padding: 10px; */
         display: flex;
         justify-content: center;
+        padding-top: 0%;
     }
     .fit_main{
         visibility: hidden;

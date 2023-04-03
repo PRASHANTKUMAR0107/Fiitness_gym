@@ -3,10 +3,18 @@ import insta from "./static/images/insta.png"
 import wa from "./static/images/wa.png"
 import fb from "./static/images/fb.png"
 import mail from "./static/images/mail.png"
+import $ from 'jquery';
+
+const load=()=>{
+    console.log("abtm");
+    $(".about_main")
+    .css("height",(window.innerHeight));
+}
+
 const AboutUs = () => {
     return ( 
-    <div className="all_abt">
-        <div className="about_main flex flex-col justify-between">
+    <div onLoad={load} className="all_abt">
+        <div  className="about_main flex flex-col justify-between">
             <div className="abt_one">
             <div className="abt_head">
                 <p className="text-8xl"> WE ARE THE FIITNESS GYM.</p>
