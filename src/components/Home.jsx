@@ -32,8 +32,10 @@ $(window).scroll(function(){
 });
 
 const load=()=>{
-  $("main")
-  .css("height",(window.innerHeight));
+  if(window.screen.width<900){
+    $("main")
+    .css("height",(window.innerHeight));
+  }
 }
 
 const animate_main = {

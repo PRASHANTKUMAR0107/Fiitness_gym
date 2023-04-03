@@ -9,7 +9,7 @@ import {HashLink} from "react-router-hash-link";
 const Navbar = () => {
     const [visi,setVisi]=useState(false);
     useEffect(()=>{
-        if(window.screen.width>=900){
+        if(window.screen.width>=1000){
             setVisi(true);
             // console.log("useEffect")
         }
@@ -23,7 +23,12 @@ const Navbar = () => {
     }
 
     $(window).scroll(function(){
-        if(window.screen.width>900){
+        if(window.screen.width<1000){
+            if(visi){
+                setVisi(false);
+            }
+        }
+        if(window.screen.width>1000){
             if($(window).scrollTop()>600){
                 $("nav").css("background-color",'rgb(32, 32, 32)')
             } else {

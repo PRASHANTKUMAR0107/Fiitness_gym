@@ -152,18 +152,17 @@ main::before{
     margin-right: 10px;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:800px){
     main{
         background-image:linear-gradient(rgba(255, 255, 255, 0), #212929e7), url(../images/5.jpg);
         background-size: cover;
-        grid-template-columns: repeat(1,1fr);
+        /* grid-template-columns: repeat(1,1fr); */
         display: flex;
         justify-content: center;
-        /* overflow: hidden; */
-        /* width: 100vw; */
     }
     .main_text button{
         font-size:small;
+        transform: translateY(-110%);
     }
     .logo_main{
         visibility: hidden;
@@ -198,23 +197,26 @@ main::before{
         /* margin-left: 0%; */
         justify-content: center;
         z-index: 15;
+        margin: 0%;
+        /* transform: translateY(-100%); */
     }
     .social_media{
         flex-direction: column;
     }
     .main_text{
-        /* padding: 10px; */
         display: flex;
         justify-content: center;
         padding-top: 0%;
+        padding: 2%;
     }
     .fit_main{
         visibility: hidden;
         position: fixed;
     }
     .fit_mob{
+        margin-top: 4%;
         visibility: visible;
         position: relative;
-        scale: 0.8;
+        scale: 0.7;
     }
 }
