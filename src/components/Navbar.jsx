@@ -40,7 +40,9 @@ const Navbar = () => {
     const outside=()=>{
         if(window.screen.width<900){
             if(visi){
-                setVisi(false);
+                setTimeout(()=>{
+                    setVisi(false);
+                },100)
             }
         }
     }

@@ -9,7 +9,7 @@
     color: rgb(250, 73, 73);
 }
 .sb_btn{
-    background-color: #7f848aa1;
+    background-color: #7f848aae;
 }
 .sb_btn:hover{
     background-color: #212929;
@@ -64,7 +64,7 @@ input[type=number] {
         background-color: transparent;
     }
     .form{
-        height: 90%;
+        min-height: 90%;
         padding: 20px ;
         margin-top: 50px;
         border-radius: 10px;
@@ -77,11 +77,11 @@ input[type=number] {
         grid-column: span 1;
     }
     .form_input input{
-        margin: 1px;
+        margin: 1%;
         height: 30px;
     }
     .form_input select{
-        margin: 1px;
+        margin: 1%;
         height: 30px;
     }
     .sb_btn{

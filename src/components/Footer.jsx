@@ -43,13 +43,13 @@ const Footer = () => {
                           <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2 underline">Other Resources</span>
                           <ul class="list-unstyled">
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://www.instagram.com/365fiitness_/">instagram</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://www.instagram.com/365fiitness_/">Instagram</a>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="#">facebook</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="#">Facebook</a>
                             </li>
                             <li>
-                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://wa.me/9958500365">whatsapp</a>
+                              <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://wa.me/9958500365">Whatsapp</a>
                             </li>
                           </ul>
                         </div>

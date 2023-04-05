@@ -53,39 +53,40 @@
 }
 .services{
     background-color: #18375200;
-    padding: 40px;
     border-radius: 10px;
     text-align: center;
 }
 .serve_head{
     font-size: 50px;
-    /* border-left: 20px rgba(255, 255, 255, 0.2) solid; */
 }
 .serve_head h3{
-    text-shadow: #0000008e 8px 2px;
+    letter-spacing: 2px;
 }
 .serve{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 .serve_card{
     background-color: #183752;
     padding: 30px;
     text-align: center;
-    /* min-height: 45vh; */
-    border-radius: 10px;
 }
 .serve_card h3{
     font-size: x-large;
     text-decoration: underline gray ;
+}
+.c2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.518), #212929c4), url(./images/servebg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 .time{
     text-align: center;
 }
 .time_head{
     font-size: 50px;
-    text-shadow: #0000008e 8px 2px;
+    letter-spacing: 2px;
 }
 .timming{
     background-color: #183752;
@@ -98,7 +99,7 @@
 }
 .con_head{
     font-size: 50px;
-    text-shadow: #0000008e 8px 2px;
+    letter-spacing: 2px;
 }
 .concard_grid{
     display: grid;
@@ -114,10 +115,19 @@
     border-radius: 10px;
     padding: 20px;
 }
+.con_card:hover{
+    transition: 500ms;
+    background-color: rgba(216, 232, 255, 0.459);
+    border-radius: 0%;
+    scale: 1.05;
+}
 .address{
-    text-align: left;
     display: flex;
     justify-content: space-between;
+}
+.addtext{
+    width: 50%;
+    text-align: left;
 }
 @media only screen and (max-width: 900px){
     .about_main{
@@ -139,10 +149,9 @@
         font-size: larger;
     }
     .content_abt{
-        padding: 20px;
+        padding: 2%;
     }
     .services{
-        padding: 20px;
     }
     .serve_head{
         font-size: 30px;
@@ -165,5 +174,17 @@
     .our_mission h3{
         line-height: normal;
         padding-top: 30px;
+    }
+    .address{
+        flex-direction: column;
+    }
+    .addtext{
+        width: 100%;
+        text-align: center;
+    }
+    .phonenum{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3%;
     }
 }

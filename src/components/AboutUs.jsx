@@ -36,11 +36,11 @@ const AboutUs = () => {
                         <h3>Personal Training</h3>
                         <p>At Fiitness Gym, we understand that each person's fitness journey is unique, which is why we offer personalized training programs to help you achieve your individual goals. Our certified personal trainers have the knowledge and experience to develop a customized fitness plan that is tailored to your specific needs, abilities, and preferences. During your personal training sessions, your trainer will work with you to identify your fitness goals and develop a plan that is challenging and effective. They will guide you through each exercise, ensuring that your form and technique are correct and that you are working at an appropriate intensity. Additionally, they will provide you with the support and accountability you need to stay motivated and on track.</p>
                     </div>
-                    <div className="serve_card">
+                    <div className="serve_card c2">
                         <h3>Diet Plans</h3>
                         <p>At Fiitness Gym, we believe that nutrition is a critical component of any fitness program, which is why we offer nutrition coaching to our members. Our certified nutritionists have the expertise to help you develop a personalized diet plan that is tailored to your specific goals, preferences, and lifestyle. During your nutrition coaching sessions, your coach will work with you to assess your current eating habits and identify areas where you can make improvements. They will help you set realistic and achievable goals, and develop a meal plan that is balanced and sustainable. They can also provide you with guidance on portion control, healthy snacking, and eating out, to ensure that you are making healthy choices wherever you are.</p>
                     </div>
-                    <div className="serve_card">
+                    <div className="serve_card c2">
                         <h3>Machinery</h3>
                         <p>At Fiitness Gym, we pride ourselves on providing our members with state-of-the-art equipment to help them achieve their fitness goals. Our gym is equipped with the latest and most innovative machines and tools that cater to a wide range of fitness levels and abilities. We offer a variety of cardio equipment, including treadmills, ellipticals, stationary bikes, and rowing machines, to help you improve your cardiovascular health and endurance. Our strength training equipment includes free weights, weight machines, and resistance bands, to help you build and tone your muscles.</p>
                     </div>
@@ -58,11 +58,26 @@ const AboutUs = () => {
                     <p>5 AM to 12 AM</p>
                     <p>Opens 7days in a Week</p>
                 </div>
-                <hr />
+                {/* <hr /> */}
             </div>
             <div id="contact" className="contact">
                 <div className="con_head">
                     <h3>Contact Details</h3> <hr className="mb-5"/>
+                </div>
+                <div className="address">
+                    <div className="addtext text-2xl">
+                    For Enrolling and general enquiries please feel free to contact our team today. We always look forward to helping new individual reach their health and fitness goals.
+                    </div>
+                    <div className="phonenum flex flex-col p-2 text-right">
+                        <div>
+                            <h3 className="text-xl">Phone Number: </h3>
+                            <p> 9958500365 <br /> 9667769365</p>
+                        </div>
+                        <div>
+                            <h3 className="text-xl">Address: </h3>
+                            <p>E-986 Ground Floor, <br /> CR Park</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="concard_grid">
                     <div className="con_card">
@@ -107,17 +122,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <hr className=" m-2 mx-10 opacity-20"/>
-                <div className="address">
-                    <div className="flex p-1">
-                        <h3>Phone Number: </h3>
-                        <p> 9958500365 <br /> 9667769365</p>
-                    </div>
-                    <div className="flex p-1">
-                        <h3>Address: </h3>
-                        <p>E-986 Ground Floor, <br /> CR Park</p>
-                    </div>
-                </div>
-                <hr className="mt-5"/>
+
             </div>
         </div>
 

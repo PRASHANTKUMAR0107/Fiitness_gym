@@ -66,7 +66,14 @@ const Subscription = (props) => {
                         <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.839337160" id="" placeholder="Medical History (if any)" autoComplete="off"/>
                         <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.56646602" id="" placeholder="Experience (if any)"  autoComplete="off"/>
                         <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.1221171984" id="" placeholder="Last Gym Name (if any)"  autoComplete="off"/>
-                        <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.1872652932" id="" value={props.dur} placeholder="Duration" required autoComplete="off"/>
+                        <select className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" id="" name="entry.1872652932">
+                            <option value={props.dur} selected disabled hidden>{props.dur}</option>
+                            <option value="One Month">One Month</option>
+                            <option value="Three Months">Three Months</option>
+                            <option value="Six Months">Six Months</option>
+                            <option value="Twelve Months">Twelve Months</option>
+                        </select>
+                        {/* <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.1872652932" id="" value={props.dur} placeholder="Duration" required autoComplete="off"/> */}
                         <input className="rounded text-gray-200 pl-2 border-gray-400 border-2 data" type="text" name="entry.1158356603" id="" placeholder="Requirements (Eg : Gain, Loss)" required autoComplete="off"/>
                     </div>
                     <button className="sb_btn rounded p-2 m-1" type="submit">Enroll</button>		
