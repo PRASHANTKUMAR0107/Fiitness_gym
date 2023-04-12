@@ -54,7 +54,7 @@ nav{
     width: 35px;
     cursor: pointer;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     nav{
         grid-template-columns: repeat(1,1fr);
         background-color: rgb(32, 32, 32);

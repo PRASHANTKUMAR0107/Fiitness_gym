@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import $ from 'jquery';
 import {HashLink} from "react-router-hash-link";
 const Navbar = () => {
+    // let width=window.innerWidth;
     const [visi,setVisi]=useState(false);
     useEffect(()=>{
         if(window.screen.width>=1000){
@@ -14,6 +15,11 @@ const Navbar = () => {
             // console.log("useEffect")
         }
     },[])
+    useEffect(()=>{
+        if(window.screen.width>=1000){
+            setVisi(true);
+        }
+    },[window.innerWidth])
     let show_items = ()=>{
         if(visi){
             setVisi(false);
@@ -29,20 +35,25 @@ const Navbar = () => {
             }
         }
         if(window.screen.width>1000){
-            if($(window).scrollTop()>600){
+            if($(window).scrollTop()>50){
                 $("nav").css("background-color",'rgb(32, 32, 32)')
             } else {
-                $("nav").css("background-color",'rgba(32, 32, 32, 0.2)')
+                $("nav").css("background-color",'rgba(32, 32, 32, 0)')
             }
         }
     })
 
     const outside=()=>{
-        if(window.screen.width<900){
+        if(window.innerWidth<1000){
             if(visi){
                 setTimeout(()=>{
                     setVisi(false);
                 },100)
+            }
+        }
+        if(window.innerWidth>1000){
+            if(!visi){
+                setVisi(true);
             }
         }
     }
@@ -61,13 +72,12 @@ const itemvariants = {
 
     return ( 
         <>
-            <nav onMouseOut={outside} className="text-white">
+            <nav onMouseLeave={outside} className="text-white">
                 <div className="header">
                     <Link to={'/'}><img className="header_logo" src={logo} alt="logo" /></Link>
                     <p className="italic font-extrabold"> <Link to={'/'}> Fiitness Gym </Link> </p>
                     <img id="menu_btn" onClick={show_items} className="menu_icon" src={menu} alt="" />
                 </div>
-                <AnimatePresence>
                 {visi &&
                     <motion.div className="items"
                         variants={itemvariants}
@@ -81,7 +91,6 @@ const itemvariants = {
                         <div className="items_list login font-bold"> <Link to={"/subscribe"}> Subscription </Link></div> 
                     </motion.div>
                 }
-                </AnimatePresence>
             </nav>
         </>
      );

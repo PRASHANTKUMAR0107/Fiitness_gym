@@ -124,9 +124,10 @@
 .address{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .addtext{
-    width: 50%;
+    width: 30%;
     text-align: left;
 }
 @media only screen and (max-width: 900px){
@@ -185,6 +186,9 @@
     .phonenum{
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 3%;
+        margin-top: 2%;
+    }
+    .phonenum div{
+        margin: 10px;
     }
 }

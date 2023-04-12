@@ -5,9 +5,8 @@ import { Routes , Route } from 'react-router-dom';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import Subscription from './components/Subscription';
-import Success from './components/Success';
-import Error from './components/Error';
 import { useState } from 'react';
+import Gallery from './components/Gallery';
 function App() {
 
   const [duration,setDuration] = useState('');
@@ -18,9 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<AboutUs/>}/>
+        <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/subscribe' element={<Subscription durFun={setDuration} dur={duration}/>}/>
-        <Route path='/success' element={<Success/>}/>
-        <Route path='/error' element={<Error/>}/>
       </Routes>
       <Footer/>
     </div>

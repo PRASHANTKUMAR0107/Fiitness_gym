@@ -11,8 +11,9 @@ import fb from "./static/images/fb.png"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import fit from "./static/images/fitnessMAIN.png"
-import fitmob from "./static/images/fitmob.png"
+import fitmob from "./static/images/fitmob1.png"
 import $ from 'jquery';
+
 $(window).scroll(function(){
   if(window.screen.width>900){
     $("main")
@@ -70,8 +71,8 @@ const Home = () => {
           <img className="fit_mob invert" src={fitmob} alt="" />
           <img className="fit_main invert my-12 ml-10" src={fit} alt="" />
           <span className="flex my-5 justify-center z-10">
-            <button className="bg-red-600 mx-2 hover:bg-red-700 text-white font-bold py-2 px-4 text-xl rounded-full"> <Link to={'/subscribe'}> Subcribe </Link></button>
-            <button className="bg-transparent hover:bg-red-600 text-gray-200 font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-transparent text-xl rounded-full"> <Link> Gallery </Link> </button>
+            <Link to={'/subscribe'}> <button className="bg-rose-600 mx-2 hover:bg-rose-700 text-white font-bold py-2 px-12 text-sm mt-2 rounded">  Subcribe </button> </Link>
+            <Link to={"/gallery"}> <button className="bg-transparent hover:bg-rose-600 text-gray-200 font-semibold hover:text-white py-2 mt-2 px-12 border border-rose-600 hover:border-transparent text-sm rounded"> Gallery </button> </Link>
           </span>
         </motion.div>
         <motion.div className="social_media_main"
@@ -90,9 +91,9 @@ const Home = () => {
           </a>
           </motion.div>
           </div>
-        <div className="btn explore_more text-red-800"><motion.button 
+        <div className="btn explore_more"><motion.button 
           whileHover={{zoom:1.2,color:'white'}}
-          className="rounded-full hover:bg-red-600 p-1"> <a href="#content"> Explore More </a> <span> <img src={explore_more} alt="" /> </span> </motion.button></div>
+          className="rounded-full hover:text-gray-500 text-rose-600 hover:bg-rose-600 p-1"> <a href="#content"> Explore More </a> <span> <img src={explore_more} alt="" /> </span> </motion.button></div>
     </main> 
     <div id="content" className="content">
       <div className="motivation">

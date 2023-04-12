@@ -33,7 +33,7 @@ const Subscription = (props) => {
 			            <h1 className="text-gray-200 font-bold text-4xl font-sans">Be Fit !</h1>
 			            <p className="text-gray-200 mt-1">Shape your body like the way you want it.</p> 
 						<p>Join us now! </p>
-			            <motion.button onClick={explore_clicked} whileHover={{scale:1.1,backgroundColor:'white'}} type="submit" className="block p-2 bg-gray-200 text-gray-900 mt-4  rounded-2xl font-bold mb-2">Explore More Packs</motion.button>
+			            <motion.button onClick={explore_clicked} whileHover={{scale:1.1,backgroundColor:'white'}} type="submit" className="block p-2 bg-gray-200 text-gray-900 mt-4  rounded px-5 font-bold mb-2">Explore More Packs</motion.button>
 		            </motion.div>
 		        <div className="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		        <div className="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -106,7 +106,7 @@ const Subscription = (props) => {
                         <p className="text-xl">One Month</p>
                         <p>Beginner Pack (30 days)</p>
                         <p className="text-xs font-thin mt-1 mb-1">(Know the prices at our Gym)</p>
-                        <button className="rounded-full  hover:bg-gray-700 p-2">start your journey </button>
+                        <button className="rounded  hover:bg-gray-700 p-2">start your journey </button>
                     </motion.div>
                 </div>
             </motion.div>
@@ -124,7 +124,7 @@ const Subscription = (props) => {
                         <p className="text-xl">Three Months</p>
                         <p>Intermediate Pack (90 days)</p>
                         <p className="text-xs font-thin mt-1 mb-1">(Know the prices at our Gym)</p>
-                        <button className="rounded-full hover:bg-gray-700 p-2">start your journey</button>
+                        <button className="rounded hover:bg-gray-700 p-2">start your journey</button>
                     </motion.div>
                 </div>
             </motion.div>
@@ -142,7 +142,7 @@ const Subscription = (props) => {
                         <p className="text-xl">Six Months</p>
                         <p>Advanced Pack (180 days)</p>
                         <p className="text-xs font-thin mt-1 mb-1">(Know the prices at our Gym)</p>
-                        <button className="rounded-full hover:bg-gray-700 p-2">start your journey</button>
+                        <button className="rounded hover:bg-gray-700 p-2">start your journey</button>
                     </motion.div>
                 </div>
             </motion.div>
@@ -160,7 +160,7 @@ const Subscription = (props) => {
                         <p className="text-xl">Annual</p>
                         <p>Pro (365 days)</p>
                         <p className="text-xs font-thin mt-1 mb-1">(Know the prices at our Gym)</p>
-                        <button className="rounded-full hover:bg-gray-700 p-2"> start your journey </button>
+                        <button className="rounded hover:bg-gray-700 p-2"> start your journey </button>
                     </motion.div>
                 </div>
             </motion.div>

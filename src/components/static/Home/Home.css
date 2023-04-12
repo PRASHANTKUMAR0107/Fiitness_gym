@@ -161,8 +161,9 @@ main::before{
         justify-content: center;
     }
     .main_text button{
+        margin-top: 0%;
         font-size:small;
-        transform: translateY(-110%);
+        transform: translateY(-100%);
     }
     .logo_main{
         visibility: hidden;

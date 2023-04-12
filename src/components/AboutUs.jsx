@@ -65,7 +65,7 @@ const AboutUs = () => {
                     <h3>Contact Details</h3> <hr className="mb-5"/>
                 </div>
                 <div className="address">
-                    <div className="addtext text-2xl">
+                    <div className="addtext text-xl">
                     For Enrolling and general enquiries please feel free to contact our team today. We always look forward to helping new individual reach their health and fitness goals.
                     </div>
                     <div className="phonenum flex flex-col p-2 text-right">
