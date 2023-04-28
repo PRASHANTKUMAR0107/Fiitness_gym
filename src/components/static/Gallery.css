@@ -21,6 +21,20 @@
     object-fit: cover;
     width: 100%;
 }
+.box {
+    grid-template-rows: repeat(4,60vh);
+}
 .box div{
-    min-height: 45vh;
+    /* border: solid blanchedalmond 2px; */
+    box-shadow: 5px 10px 5px #000000a9;
+}
+.main_gall_img{
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .box {
+        padding: 10%;
+        grid-template-rows: repeat(7,45vh);
+    }
 }

@@ -1,59 +1,98 @@
-import { motion , useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-
+import { motion } from "framer-motion";
+import one from "../static/images/gallery/IMG-20230427-WA0010.jpg"
+import two from "../static/images/gallery/IMG-20230427-WA0012.jpg"
+import three from "../static/images/gallery/IMG-20230427-WA0013.jpg"
+import four from "../static/images/gallery/IMG-20230427-WA0014.jpg"
+import five from "../static/images/gallery/IMG-20230427-WA0017.jpg"
+import six from "../static/images/gallery/IMG-20230427-WA0020.jpg"
+import seven from "../static/images/gallery/IMG-20230427-WA0021.jpg"
 const Collage = () => {
-    const {ref,inView} = useInView({
-        threshold:0.2
-    });
-    const animation = useAnimation();
-    useEffect(()=>{
-        console.log(inView);
-        if(inView){
-            animation.start({
-                y:0,
-                opacity:1,
-                transition:{
-                    duration:0.5
-                }
-            })
+    const animateVariants = {
+        hidden:{
+            y:100,
+            opacity:0
+        },
+        visi:{
+            y:0,
+            opacity:1,
+            transition:{
+                duration:1
+            }
         }
-        if(!inView){
-            animation.start({
-                opacity:0,
-                y:300
-            })
-        }
-    },[inView])
+    }
     return ( 
         <>
-            <div
-                ref={ref}
-                className="box grid md:grid-cols-4 md:grid-rows-4 gap-5 md:px-20 px-5 text-rose-600 text-9xl">
+            <div className="box grid md:grid-cols-6  gap-5 md:px-20 px-5  text-rose-600 text-9xl">
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100 md:col-span-2 md:row-span-2">1</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-3 md:row-span-2">
+                    <img className="main_gall_img" src={one} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100 min-h-[45vh]">2</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-3 md:row-span-1">
+                    <img className="main_gall_img" src={two} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100">3</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-3 md:row-span-1">
+                    <img className="main_gall_img" src={three} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100 md:col-span-2 md:row-span-2">4</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-2 md:row-span-1">
+                    <img className="main_gall_img" src={four} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100">5</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-4 md:row-span-1">
+                    <img className="main_gall_img" src={five} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100">6</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-3 md:row-span-1">
+                    <img className="main_gall_img" src={six} alt="" />
+                </motion.div>
+
                 <motion.div
-                    animate={animation}
-                className="bg-gray-100 md:col-span-3">7</motion.div>
-                <motion.div
-                    animate={animation}
-                className="bg-gray-100">8</motion.div>
+                    variants={animateVariants}
+                    whileInView={'visi'}
+                    initial='hidden'
+                    viewport={{once:false,amount:0.25}}
+                    whileHover={{'filter': 'saturate(1)'}}
+                className="bg-gray-100 md:col-span-3 md:row-span-1">
+                    <img className="main_gall_img" src={seven} alt="" />
+                </motion.div>
+                
             </div>
         </>
      );

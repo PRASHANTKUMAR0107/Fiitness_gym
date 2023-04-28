@@ -121,7 +121,7 @@ const Home = () => {
       <div className="about_gym">
         <img className="about_gym_img" src={about_gymimg} alt="loading ..." />
         <div>
-          <h3 className="text-9xl my-5"> <i>365</i><span className="text-5xl">days of fitness.</span> </h3>
+          <h3 className="text-9xl my-5"> <i className="text-rose-600">365</i><span className="text-5xl">days of fitness.</span> </h3>
           <p className="text-gray-300"> Staying healthy is not always easy, but it is always worth it. When you prioritize your health, you have more energy, feel more confident, and are better equipped to handle whatever challenges come your way. Whether you're looking to lose weight, build muscle, or simply feel better in your own skin, taking care of yourself is the key to achieving your goals. So don't give up, even when it gets tough. Every healthy choice you make is a step in the right direction, and each day is a new opportunity to become the best version of yourself. Remember that you are worth the effort, and that a healthy lifestyle is the best gift you can give yourself. So you can also follow us on other social media platforms to stay motivated and fit.</p>
           <br />
           <div className="social_media">

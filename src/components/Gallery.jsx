@@ -2,8 +2,6 @@ import "./static/Gallery.css"
 import explore_more from "./static/images/3.png";
 import { motion , easeOut } from "framer-motion";
 import { Link } from "react-router-dom";
-import fit from "./static/images/1.jpg"
-import fitmob from "./static/images/fitmob1.png"
 import Slider from "./Gallery/Slider";
 import $ from 'jquery';
 import Collage from "./Gallery/Collage";
@@ -89,8 +87,17 @@ const Gallery = () => {
   </motion.div>
 </section>
 
-<div className="collage relative bg-cover bg-center bg-no-repeat">
+<div className="collage relative bg-cover bg-center bg-no-repeat pb-10">
   <Slider/>
+
+  <div className="text-center">
+      <h1 className="text-3xl font-extrabold sm:text-5xl p-10">
+        Here are some glaces of your&nbsp; 
+        <strong className=" font-extrabold text-rose-700">
+        Own Gym.
+        </strong>
+      </h1>
+  </div>
   <Collage/>
 </div>
         </div>

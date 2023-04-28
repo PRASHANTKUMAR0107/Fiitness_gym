@@ -17,7 +17,7 @@ const AboutUs = () => {
         <div  className="about_main flex flex-col justify-between">
             <div className="abt_one">
             <div className="abt_head">
-                <p className="text-8xl"> WE ARE THE FIITNESS GYM.</p>
+                <p className="text-8xl"> WE ARE THE <span className="text-rose-700"> FIITNESS GYM. </span></p>
             </div>
             <div className="our_mission">
                 <h3>OUR MISSION</h3>
@@ -29,7 +29,7 @@ const AboutUs = () => {
         <div className="content_abt">
             <div className="services">
                 <div className="serve_head">
-                    <h3>SERVICES OFFERED</h3><hr className="mb-5" />
+                    <h3 className="text-rose-500">SERVICES OFFERED</h3><hr className="mb-5" />
                 </div>
                 <div className="serve">
                     <div className="serve_card">
@@ -52,7 +52,7 @@ const AboutUs = () => {
             </div>
             <div id="time" className="time">
                 <div  className="time_head">
-                    <h3>Timmings</h3> <hr className="mb-5"/>
+                    <h3 className="text-rose-500">Timmings</h3> <hr className="mb-5"/>
                 </div>
                 <div className="timming mb-5">
                     <p>5 AM to 12 AM</p>
@@ -62,7 +62,7 @@ const AboutUs = () => {
             </div>
             <div id="contact" className="contact">
                 <div className="con_head">
-                    <h3>Contact Details</h3> <hr className="mb-5"/>
+                    <h3 className="text-rose-500">Contact Details</h3> <hr className="mb-5"/>
                 </div>
                 <div className="address">
                     <div className="addtext text-xl">

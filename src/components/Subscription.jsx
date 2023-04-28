@@ -30,7 +30,7 @@ const Subscription = (props) => {
 						transition={{type:'spring',stiffness:200}}
                         className="p-2"
 					>
-			            <h1 className="text-gray-200 font-bold text-4xl font-sans">Be Fit !</h1>
+			            <h1 className="text-rose-600 font-bold text-4xl font-sans">Be Fit !</h1>
 			            <p className="text-gray-200 mt-1">Shape your body like the way you want it.</p> 
 						<p>Join us now! </p>
 			            <motion.button onClick={explore_clicked} whileHover={{scale:1.1,backgroundColor:'white'}} type="submit" className="block p-2 bg-gray-200 text-gray-900 mt-4  rounded px-5 font-bold mb-2">Explore More Packs</motion.button>
