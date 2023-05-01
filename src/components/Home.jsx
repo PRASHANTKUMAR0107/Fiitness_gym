@@ -44,9 +44,24 @@ $(window).scroll(function(){
       visible:{
         x:0,
         transition:{
-      type:'spring',
-      stiffness:200
+          type:'spring',
+          stiffness:200
     }
+  }
+}
+
+const animate_hero = {
+  hidden:{
+      y:80,
+      opacity:0
+  },
+  visible:{
+      y:0,
+      opacity:1,
+      transition:{
+          staggerChildren: 0.3,
+          duration:0.5
+      }
   }
 }
 
@@ -86,9 +101,9 @@ const Home = () => {
           <a href="https://www.instagram.com/365fiitness_/" target={'blank'}> 
             <img className="social_media_main_img" src={insta} alt="" />
           </a>
-          <a href="https://wa.me/9958500365" target={'blank'}> 
+          {/* <a href="https://wa.me/9958500365" target={'blank'}> 
             <img className="social_media_main_img" src={fb} alt="" /> 
-          </a>
+          </a> */}
           </motion.div>
           </div>
         <div className="btn explore_more"><motion.button 
@@ -101,23 +116,34 @@ const Home = () => {
         "You don't have to be great to start, but you have to start to be great."
         </p>
       </div>
-      <div id="hero" className="hero ">
-        <div className="hero_items">
+      <motion.div
+        variants={animate_hero}
+        whileInView={'visible'}
+        initial='hidden'
+        viewport={{once:true,amount:0.2}}
+      id="hero" className="hero ">
+        <motion.div
+          variants={animate_hero}
+        className="hero_items">
           <img className="hero_img " src={hero1} alt="loading ..." />
           <h3>Modern Equipments to Train</h3>
           <p className="text-gray-300">Train using state of the art modern equipment 24/7. Get fit to suiting your timetable and schedule. Workout and drive yourself to your limits at your own pace.</p>
-        </div>
-        <div className="hero_items">
+        </motion.div>
+        <motion.div
+          variants={animate_hero}
+        className="hero_items">
           <img className="hero_img" src={hero2} alt="loading ..." />
           <h3>Healthy Diet Plans</h3>
           <p className="text-gray-300">Fitness is all about planning and sticking to routine. Make exercise your habit with small short term goals with an ultimate long-term goal.</p>
-        </div>
-        <div className="hero_items">
+        </motion.div>
+        <motion.div
+          variants={animate_hero}
+        className="hero_items">
           <img className="hero_img" src={hero3} alt="loading ..." />
           <h3>Healthy Habits</h3>
           <p className="text-gray-300">Enjoy training in a community unified environment. We provide a mixture of focal group classes and personal training session availability's to optimize your health.</p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="about_gym">
         <img className="about_gym_img" src={about_gymimg} alt="loading ..." />
         <div>

@@ -15,11 +15,11 @@ const Footer = () => {
                       Unleash your potential with Fiitness Gym - where fitness meets community.
                       </h5>
                       <div class="mt-6 lg:mb-0 mb-6">
-                        <button class="bg-gray-900 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                        <button class="bg-gray-900 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2" type="button">
                           <a href="https://www.instagram.com/365fiitness_/" target={"blank"}><img src={insta} alt="" /></a></button>
-                        <button class="bg-gray-900 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                          <img src={fb} alt="" /></button>
-                        <button class="bg-gray-900 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                        {/* <button class="bg-gray-900 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2" type="button">
+                          <img src={fb} alt="" /></button> */}
+                        <button class="bg-gray-900 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2" type="button">
                           <a href="https://wa.me/9958500365" target={'blank'}> <img src={wa} alt="" /> </a></button>
                       </div>
                     </div>
@@ -45,9 +45,9 @@ const Footer = () => {
                             <li>
                               <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://www.instagram.com/365fiitness_/">Instagram</a>
                             </li>
-                            <li>
+                            {/* <li>
                               <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="#">Facebook</a>
-                            </li>
+                            </li> */}
                             <li>
                               <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" target={"blank"} href="https://wa.me/9958500365">Whatsapp</a>
                             </li>

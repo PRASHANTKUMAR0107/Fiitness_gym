@@ -28,7 +28,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-3 md:row-span-2">
                     <img className="main_gall_img" src={one} alt="" />
                 </motion.div>
@@ -38,7 +37,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-3 md:row-span-1">
                     <img className="main_gall_img" src={two} alt="" />
                 </motion.div>
@@ -48,7 +46,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-3 md:row-span-1">
                     <img className="main_gall_img" src={three} alt="" />
                 </motion.div>
@@ -58,7 +55,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-2 md:row-span-1">
                     <img className="main_gall_img" src={four} alt="" />
                 </motion.div>
@@ -68,7 +64,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-4 md:row-span-1">
                     <img className="main_gall_img" src={five} alt="" />
                 </motion.div>
@@ -78,7 +73,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-3 md:row-span-1">
                     <img className="main_gall_img" src={six} alt="" />
                 </motion.div>
@@ -88,7 +82,6 @@ const Collage = () => {
                     whileInView={'visi'}
                     initial='hidden'
                     viewport={{once:false,amount:0.25}}
-                    whileHover={{'filter': 'saturate(1)'}}
                 className="bg-gray-100 md:col-span-3 md:row-span-1">
                     <img className="main_gall_img" src={seven} alt="" />
                 </motion.div>
